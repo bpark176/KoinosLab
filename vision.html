@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="OpenLab's vision for accessible, shared, and community-supported scientific infrastructure."
+    />
+    <title>Vision | OpenLab Initiative</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="vision">
+    <header class="site-header">
+      <div class="topline">
+        <span>OpenLab Initiative</span>
+        <a href="mailto:hello@openlabinitiative.org">hello@openlabinitiative.org</a>
+      </div>
+      <div class="nav-shell">
+        <a class="brand" href="./index.html" aria-label="OpenLab home">
+          <span class="brand-mark" aria-hidden="true">OL</span>
+          <span>
+            <strong>OpenLab</strong>
+            <small>Scientific Tools Access Network</small>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary navigation" data-nav>
+          <a href="./index.html" data-nav-page="home">Home</a>
+          <a href="./devices.html" data-nav-page="devices">Devices</a>
+          <a href="./marketplace.html" data-nav-page="marketplace">Marketplace</a>
+          <a href="./publications.html" data-nav-page="publications">Publications</a>
+          <a href="./vision.html" data-nav-page="vision">Vision</a>
+          <a href="./team.html" data-nav-page="team">Our team</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="section-shell page-hero-layout">
+          <div>
+            <p class="eyebrow" data-field="vision.eyebrow"></p>
+            <h1 data-field="vision.title"></h1>
+          </div>
+          <p class="lead" data-field="vision.lead"></p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-shell vision-statement">
+          <p data-field="vision.statement"></p>
+        </div>
+      </section>
+
+      <section class="section section-light">
+        <div class="section-shell">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Strategic pillars</p>
+            <h2>What guides the work</h2>
+          </div>
+          <div class="principle-grid" data-vision-pillars></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-shell timeline-layout">
+          <div class="section-heading">
+            <p class="eyebrow">Roadmap</p>
+            <h2>From pilot to network</h2>
+          </div>
+          <div class="timeline-list" data-timeline></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-shell footer-layout">
+        <div>
+          <strong>OpenLab Initiative</strong>
+          <p>Making scientific tools accessible.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="./devices.html">Devices</a>
+          <a href="./marketplace.html">Marketplace</a>
+          <a href="./publications.html">Publications</a>
+          <a href="./vision.html">Vision</a>
+          <a href="./team.html">Our team</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="./content.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

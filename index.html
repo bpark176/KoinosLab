@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="OpenLab Initiative is a scientific and engineering organization making research tools, devices, and practical science resources more accessible."
+    />
+    <title>OpenLab Initiative</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <div class="topline">
+        <span>OpenLab Initiative</span>
+        <a href="mailto:hello@openlabinitiative.org">hello@openlabinitiative.org</a>
+      </div>
+      <div class="nav-shell">
+        <a class="brand" href="./index.html" aria-label="OpenLab home">
+          <span class="brand-mark" aria-hidden="true">OL</span>
+          <span>
+            <strong>OpenLab</strong>
+            <small>Scientific Tools Access Network</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" aria-label="Primary navigation" data-nav>
+          <a href="./index.html" data-nav-page="home">Home</a>
+          <a href="./devices.html" data-nav-page="devices">Devices</a>
+          <a href="./marketplace.html" data-nav-page="marketplace">Marketplace</a>
+          <a href="./publications.html" data-nav-page="publications">Publications</a>
+          <a href="./vision.html" data-nav-page="vision">Vision</a>
+          <a href="./team.html" data-nav-page="team">Our team</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="home-hero">
+        <div class="section-shell hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow" data-field="home.eyebrow"></p>
+            <h1 data-field="home.title"></h1>
+            <p class="lead" data-field="home.lead"></p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="./devices.html">Explore devices</a>
+              <a class="button button-secondary" href="./publications.html">View publications</a>
+            </div>
+          </div>
+          <figure class="hero-image">
+            <img
+              src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1400&q=80"
+              alt="A scientific laboratory with microscopes and research equipment."
+            />
+            <figcaption>Shared instruments, open learning, and community-supported science.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section mission-section">
+        <div class="section-shell mission-layout">
+          <div>
+            <p class="eyebrow" data-field="home.missionEyebrow"></p>
+            <h2 data-field="home.missionTitle"></h2>
+          </div>
+          <p data-field="home.missionCopy"></p>
+        </div>
+      </section>
+
+      <section class="section section-light">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Main areas</p>
+            <h2>Programs and resources</h2>
+          </div>
+          <div class="preview-grid" data-home-previews></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-shell home-news-layout">
+          <div class="section-heading">
+            <p class="eyebrow">Research activity</p>
+            <h2>Recent publications and notes</h2>
+          </div>
+          <div class="publication-list compact-list" data-publications-preview></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-shell footer-layout">
+        <div>
+          <strong>OpenLab Initiative</strong>
+          <p>Making scientific tools accessible.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="./devices.html">Devices</a>
+          <a href="./marketplace.html">Marketplace</a>
+          <a href="./publications.html">Publications</a>
+          <a href="./vision.html">Vision</a>
+          <a href="./team.html">Our team</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="./content.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
