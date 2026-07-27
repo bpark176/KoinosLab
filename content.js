@@ -1,10 +1,10 @@
 // Edit this file first when updating site copy, cards, publications, devices, or team details.
-window.openLabContent = {
+window.koinosLabContent = {
   home: {
     eyebrow: "Research infrastructure for everyone",
-    title: "OpenLab Initiative",
+    title: "Koinos Lab",
     lead:
-      "OpenLab is a scientific and engineering organization making devices, research tools, and practical learning resources more accessible to students and early-stage builders.",
+      "Koinos Lab is a scientific and engineering organization making devices, research tools, and practical learning resources more accessible to students and early-stage builders.",
     missionEyebrow: "Organization overview",
     missionTitle: "Shared tools for practical science.",
     missionCopy:
@@ -25,13 +25,13 @@ window.openLabContent = {
       {
         title: "Publications",
         label: "Technical notes and reports",
-        text: "Read guides, device briefs, field reports, and research notes from the OpenLab community.",
+        text: "Read guides, device briefs, field reports, and research notes from the Koinos Lab community.",
         href: "./publications.html"
       },
       {
         title: "Vision",
         label: "Long-term direction",
-        text: "Learn how OpenLab is building a practical network for accessible science, education, and engineering.",
+        text: "Learn how Koinos Lab is building a practical network for accessible science, education, and engineering.",
         href: "./vision.html"
       }
     ]
@@ -41,7 +41,7 @@ window.openLabContent = {
     eyebrow: "Devices",
     title: "Device library",
     lead:
-      "OpenLab catalogs and shares scientific tools that help learners move from curiosity to measurement, prototyping, and experimentation.",
+      "Koinos Lab catalogs and shares scientific tools that help learners move from curiosity to measurement, prototyping, and experimentation.",
     sidebar:
       "The device library is organized around practical use, not just equipment names. Each entry should eventually include setup requirements, safety notes, example experiments, and availability.",
     items: [
@@ -102,7 +102,7 @@ window.openLabContent = {
     eyebrow: "Marketplace",
     title: "Scientific equipment exchange",
     lead:
-      "The OpenLab Marketplace helps equipment circulate through donations, lending, requests, and responsible reuse.",
+      "The Koinos Lab Marketplace helps equipment circulate through donations, lending, requests, and responsible reuse.",
     focusTitle: "Keeping useful tools in motion.",
     focusCopy:
       "Many scientific tools are underused because they are too specialized, too expensive, or simply stored out of sight. The marketplace creates a structured way to connect available equipment with people who can put it to work.",
@@ -130,7 +130,7 @@ window.openLabContent = {
       },
       {
         title: "Safety boundaries",
-        text: "OpenLab should avoid hazardous materials and make safety expectations visible before exchange."
+        text: "Koinos Lab should avoid hazardous materials and make safety expectations visible before exchange."
       },
       {
         title: "Responsible handoff",
@@ -143,15 +143,15 @@ window.openLabContent = {
     eyebrow: "Publications",
     title: "Reports, guides, and technical notes",
     lead:
-      "OpenLab publications document practical knowledge about accessible scientific tools, device reuse, and community research infrastructure.",
+      "Koinos Lab publications document practical knowledge about accessible scientific tools, device reuse, and community research infrastructure.",
     sidebar:
-      "This page is ready for real papers, PDFs, or project writeups. For now, it uses placeholder entries that can be replaced as OpenLab begins publishing.",
+      "This page is ready for real papers, PDFs, or project writeups. For now, it uses placeholder entries that can be replaced as Koinos Lab begins publishing.",
     items: [
       {
         type: "Technical note",
         title: "Designing a beginner-ready device entry",
         date: "Forthcoming",
-        authors: "OpenLab Initiative",
+        authors: "Koinos Lab",
         summary:
           "A framework for documenting device purpose, setup, materials, safety notes, and example experiments."
       },
@@ -159,7 +159,7 @@ window.openLabContent = {
         type: "Field report",
         title: "Building a small shared instrument library",
         date: "Forthcoming",
-        authors: "OpenLab Initiative",
+        authors: "Koinos Lab",
         summary:
           "Early lessons from organizing scientific tools for lending, classroom use, and student-led research."
       },
@@ -167,7 +167,7 @@ window.openLabContent = {
         type: "Guide",
         title: "Responsible reuse for educational lab equipment",
         date: "Forthcoming",
-        authors: "OpenLab Initiative",
+        authors: "Koinos Lab",
         summary:
           "A practical guide for evaluating donated or second-hand scientific tools before they are shared."
       }
@@ -183,7 +183,7 @@ window.openLabContent = {
       },
       {
         title: "Research notes",
-        text: "Project writeups, observations, and lessons from experiments or OpenLab-supported work."
+        text: "Project writeups, observations, and lessons from experiments or Koinos Lab-supported work."
       }
     ]
   },
@@ -192,9 +192,9 @@ window.openLabContent = {
     eyebrow: "Vision",
     title: "An open network for practical science",
     lead:
-      "OpenLab is built around a simple belief: more people can do meaningful science when tools, documentation, and community support are easier to reach.",
+      "Koinos Lab is built around a simple belief: more people can do meaningful science when tools, documentation, and community support are easier to reach.",
     statement:
-      "Scientific access is not only about owning expensive equipment. It is about knowing what tools exist, understanding how to use them safely, and being connected to people who can help. OpenLab aims to turn isolated equipment and scattered knowledge into shared infrastructure for learning, research, and invention.",
+      "Scientific access is not only about owning expensive equipment. It is about knowing what tools exist, understanding how to use them safely, and being connected to people who can help. Koinos Lab aims to turn isolated equipment and scattered knowledge into shared infrastructure for learning, research, and invention.",
     pillars: [
       {
         title: "Access over ownership",
@@ -206,7 +206,7 @@ window.openLabContent = {
       },
       {
         title: "Community-led reliability",
-        text: "OpenLab grows through trust, maintenance habits, transparent exchange, and feedback from real users."
+        text: "Koinos Lab grows through trust, maintenance habits, transparent exchange, and feedback from real users."
       }
     ],
     timeline: [
@@ -230,16 +230,16 @@ window.openLabContent = {
 
   team: {
     eyebrow: "Our team",
-    title: "People building OpenLab",
+    title: "People building Koinos Lab",
     lead:
-      "OpenLab is led by students and collaborators interested in scientific access, engineering education, and practical research infrastructure.",
+      "Koinos Lab is led by students and collaborators interested in scientific access, engineering education, and practical research infrastructure.",
     sidebar:
       "Use this area for mentors, advisors, partner organizations, or committee roles once those details are ready.",
     members: [
       {
         name: "Brennan Park",
         role: "Founder",
-        focus: "OpenLab vision, partnerships, product direction, and early program development."
+        focus: "Koinos Lab vision, partnerships, product direction, and early program development."
       },
       {
         name: "Team member",
@@ -266,7 +266,7 @@ window.openLabContent = {
       {
         name: "Community partner",
         type: "Placeholder role",
-        description: "Connects OpenLab resources with schools, clubs, libraries, or research groups."
+        description: "Connects Koinos Lab resources with schools, clubs, libraries, or research groups."
       }
     ]
   }

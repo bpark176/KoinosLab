@@ -1,6 +1,6 @@
-# OpenLab Website
+# Koinos Lab Website
 
-This is a simple static multi-page website for OpenLab Initiative.
+This is a simple static multi-page website for Koinos Lab.
 
 ## Edit the site
 

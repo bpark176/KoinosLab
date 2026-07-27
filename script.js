@@ -1,5 +1,5 @@
 (function () {
-  const content = window.openLabContent || {};
+  const content = window.koinosLabContent || {};
 
   document.querySelectorAll("[data-field]").forEach((node) => {
     const value = getValue(content, node.dataset.field);
