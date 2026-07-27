@@ -365,25 +365,25 @@ window.koinosLabContent = {
             name: "Brennan Park",
             role: "Founder & CEO",
             affiliation: "Seoul International School",
-            photo:
-              "https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=900&q=80",
-            photoAlt: "Professional portrait placeholder for Brennan Park."
+            photo: "./assets/logos/koinos-reversed.svg",
+            photoAlt: "Koinos Lab logo placeholder for Brennan Park.",
+            placeholder: true
           },
           {
             name: "Ian Kim",
             role: "Director of Engineering",
             affiliation: "Seoul International School",
-            photo:
-              "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=900&q=80",
-            photoAlt: "Professional portrait placeholder for Ian Kim."
+            photo: "./assets/logos/koinos-reversed.svg",
+            photoAlt: "Koinos Lab logo placeholder for Ian Kim.",
+            placeholder: true
           },
           {
             name: "Research Lead",
             role: "Director of Research",
             affiliation: "Koinos Lab",
-            photo:
-              "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80",
-            photoAlt: "Professional portrait placeholder for the Director of Research."
+            photo: "./assets/logos/koinos-reversed.svg",
+            photoAlt: "Koinos Lab logo placeholder for the Director of Research.",
+            placeholder: true
           },
           {
             name: "To Be Announced",
@@ -403,25 +403,28 @@ window.koinosLabContent = {
           "Advisors provide outside perspective on technical rigor, safety, feasibility, and responsible growth.",
         people: [
           {
-            name: "Scientific Advisor",
+            name: "To Be Announced",
             role: "Advisor, Scientific Review",
-            photo:
-              "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80",
-            photoAlt: "Professional portrait placeholder for a scientific advisor."
+            affiliation: "Koinos Lab",
+            photo: "./assets/logos/koinos-reversed.svg",
+            photoAlt: "Koinos Lab logo marking a future scientific advisor.",
+            placeholder: true
           },
           {
-            name: "Engineering Advisor",
+            name: "To Be Announced",
             role: "Advisor, Engineering Systems",
-            photo:
-              "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80",
-            photoAlt: "Professional portrait placeholder for an engineering advisor."
+            affiliation: "Koinos Lab",
+            photo: "./assets/logos/koinos-reversed.svg",
+            photoAlt: "Koinos Lab logo marking a future engineering advisor.",
+            placeholder: true
           },
           {
-            name: "Community Advisor",
+            name: "To Be Announced",
             role: "Advisor, Partnerships",
-            photo:
-              "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=900&q=80",
-            photoAlt: "Professional portrait placeholder for a community advisor."
+            affiliation: "Koinos Lab",
+            photo: "./assets/logos/koinos-reversed.svg",
+            photoAlt: "Koinos Lab logo marking a future community advisor.",
+            placeholder: true
           },
           {
             name: "To Be Announced",
@@ -441,25 +444,28 @@ window.koinosLabContent = {
           "Members contribute to the device library, marketplace operations, publications, and practical research projects.",
         people: [
           {
-            name: "Device Library Member",
+            name: "To Be Announced",
             role: "Device Documentation",
-            photo:
-              "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=900&q=80",
-            photoAlt: "Project team photo placeholder for device documentation."
+            affiliation: "Koinos Lab",
+            photo: "./assets/logos/koinos-reversed.svg",
+            photoAlt: "Koinos Lab logo marking a future device library member.",
+            placeholder: true
           },
           {
-            name: "Marketplace Member",
+            name: "To Be Announced",
             role: "Equipment Exchange",
-            photo:
-              "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80",
-            photoAlt: "Project team photo placeholder for marketplace operations."
+            affiliation: "Koinos Lab",
+            photo: "./assets/logos/koinos-reversed.svg",
+            photoAlt: "Koinos Lab logo marking a future marketplace member.",
+            placeholder: true
           },
           {
-            name: "Publications Member",
+            name: "To Be Announced",
             role: "Research Communication",
-            photo:
-              "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80",
-            photoAlt: "Project team photo placeholder for publications work."
+            affiliation: "Koinos Lab",
+            photo: "./assets/logos/koinos-reversed.svg",
+            photoAlt: "Koinos Lab logo marking a future publications member.",
+            placeholder: true
           },
           {
             name: "To Be Announced",
