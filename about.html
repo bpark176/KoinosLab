@@ -5,28 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Explore Koinos Lab's growing device library for accessible scientific and engineering projects."
+      content="Learn who Koinos Lab is, why it exists, and how it approaches affordable scientific instruments and broader scientific accessibility."
     />
-    <link rel="canonical" href="https://www.koinoslab.org/devices.html" />
+    <link rel="canonical" href="https://www.koinoslab.org/about.html" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Koinos Lab" />
-    <meta property="og:title" content="Devices | Koinos Lab" />
+    <meta property="og:title" content="About | Koinos Lab" />
     <meta
       property="og:description"
-      content="Explore Koinos Lab's growing device library for accessible scientific and engineering projects."
+      content="Learn who Koinos Lab is, why it exists, and how it approaches affordable scientific instruments and broader scientific accessibility."
     />
-    <meta property="og:url" content="https://www.koinoslab.org/devices.html" />
+    <meta property="og:url" content="https://www.koinoslab.org/about.html" />
     <meta property="og:image" content="https://www.koinoslab.org/assets/logos/koinos-primary.png" />
     <meta property="og:image:alt" content="Koinos Lab" />
     <meta name="twitter:card" content="summary_large_image" />
-    <title>Devices | Koinos Lab</title>
+    <title>About | Koinos Lab</title>
     <link rel="icon" type="image/svg+xml" href="./assets/logos/koinos-icon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/logos/koinos-icon-32.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="./assets/logos/koinos-icon-192.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/logos/koinos-icon-180.png" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body data-page="devices">
+  <body data-page="about">
     <header class="site-header">
       <div class="nav-shell">
         <a class="brand" href="./index.html" aria-label="Koinos Lab home">
@@ -52,38 +52,78 @@
         <div class="page-hero-layout">
           <div class="page-hero-copy">
             <div class="page-hero-copy-inner">
-              <p class="eyebrow" data-field="devices.eyebrow"></p>
-              <h1 data-field="devices.title"></h1>
-              <p class="lead" data-field="devices.lead"></p>
+              <p class="eyebrow" data-field="about.eyebrow"></p>
+              <h1 data-field="about.title"></h1>
+              <p class="lead" data-field="about.lead"></p>
             </div>
           </div>
           <figure class="page-hero-media">
             <img
               src="https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&amp;fit=crop&amp;w=1800&amp;q=84"
-              alt="An engineer working with scientific equipment and electronics."
+              alt="An engineer developing accessible scientific equipment."
             />
-            <figcaption>Tools move further when knowledge moves with them.</figcaption>
+            <figcaption>Practical engineering in service of broader scientific access.</figcaption>
           </figure>
         </div>
       </section>
 
-      <section class="section catalog-section">
+      <section class="section">
         <div class="section-shell content-grid">
           <aside class="sidebar-note">
-            <h2>Device library</h2>
-            <p data-field="devices.sidebar"></p>
+            <p class="eyebrow">Who we are</p>
+            <h2 data-field="about.identityTitle"></h2>
           </aside>
-          <div class="record-list" data-devices></div>
+          <div class="publication-list">
+            <article class="publication-item">
+              <p class="eyebrow">Organization</p>
+              <h3>Koinos Lab</h3>
+              <p data-field="about.identityCopy"></p>
+            </article>
+            <article class="publication-item">
+              <p class="eyebrow">Purpose</p>
+              <h3 data-field="about.purposeTitle"></h3>
+              <p data-field="about.purposeCopy"></p>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="section section-light process-section">
+      <section class="section vision-intro">
+        <div class="section-shell vision-statement">
+          <p data-field="about.mission"></p>
+        </div>
+      </section>
+
+      <section class="section section-light">
         <div class="section-shell">
           <div class="section-heading narrow">
-            <p class="eyebrow">Access model</p>
-            <h2>How a device moves through Koinos Lab</h2>
+            <p class="eyebrow">What we do</p>
+            <h2>Build tools, knowledge, and systems for participation</h2>
           </div>
-          <div class="process-grid" data-device-pathway></div>
+          <div class="principle-grid" data-about-focus></div>
+        </div>
+      </section>
+
+      <section class="section process-section">
+        <div class="section-shell">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Our approach</p>
+            <h2>Affordable instruments without sacrificing rigor</h2>
+          </div>
+          <div class="process-grid" data-about-approach></div>
+        </div>
+      </section>
+
+      <section class="section mission-section">
+        <div class="section-shell mission-layout">
+          <div class="mission-heading">
+            <img class="mission-badge" src="./assets/logos/koinos-badge.svg" alt="" aria-hidden="true" />
+            <div>
+              <p class="eyebrow">Broader vision</p>
+              <h2>Scientific accessibility as shared infrastructure</h2>
+            </div>
+          </div>
+          <p data-field="about.vision"></p>
         </div>
       </section>
     </main>

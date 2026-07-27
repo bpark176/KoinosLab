@@ -221,6 +221,54 @@ window.koinosLabContent = {
     ]
   },
 
+  about: {
+    eyebrow: "About Koinos Lab",
+    title: "Building practical pathways into science",
+    lead:
+      "Koinos Lab is a scientific and engineering initiative designing affordable instruments, clear technical resources, and shared systems that help more people participate in practical science.",
+    identityTitle: "A research organization built around access",
+    identityCopy:
+      "Koinos Lab brings together instrument design, validation, documentation, and community exchange. We focus on the practical barriers that keep students, educators, and early-stage researchers from using capable scientific tools.",
+    purposeTitle: "Why Koinos Lab exists",
+    purposeCopy:
+      "Scientific curiosity is widely distributed, but equipment, guidance, and institutional support are not. We exist to narrow that gap by making useful instruments easier to build, understand, maintain, and share.",
+    mission:
+      "Our mission is to expand who can investigate, measure, test, and build by lowering the cost and complexity of dependable scientific instrumentation.",
+    focusAreas: [
+      {
+        title: "Design useful instruments",
+        text: "Develop affordable tools around real learning and research needs, with careful attention to performance, safety, and ease of use."
+      },
+      {
+        title: "Document the full system",
+        text: "Publish clear setup, calibration, maintenance, and validation guidance so an instrument remains useful beyond its original builder."
+      },
+      {
+        title: "Support shared access",
+        text: "Create pathways for equipment, knowledge, and practical experience to circulate through schools, project teams, and community partners."
+      }
+    ],
+    approach: [
+      {
+        step: "01",
+        title: "Begin with the scientific need",
+        text: "Define the measurement, user, environment, and evidence standard before deciding what the instrument should become."
+      },
+      {
+        step: "02",
+        title: "Design for affordability and repair",
+        text: "Use accessible components, transparent construction, and modular choices that make tools easier to reproduce and maintain."
+      },
+      {
+        step: "03",
+        title: "Validate and publish",
+        text: "Test performance, document limitations, and share the methods needed for others to use the instrument responsibly."
+      }
+    ],
+    vision:
+      "We envision scientific infrastructure that is more open, distributed, and understandable: a world where cost or institutional access does not determine who gets to experiment, learn, and contribute."
+  },
+
   vision: {
     eyebrow: "Vision",
     title: "An open network for practical science",

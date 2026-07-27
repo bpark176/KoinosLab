@@ -14,6 +14,8 @@
   render("[data-marketplace-principles]", content.marketplace?.principles, principleCard);
   render("[data-publications]", content.publications?.items, publicationItem);
   render("[data-publication-categories]", content.publications?.categories, principleCard);
+  render("[data-about-focus]", content.about?.focusAreas, principleCard);
+  render("[data-about-approach]", content.about?.approach, processCard);
   render("[data-vision-pillars]", content.vision?.pillars, principleCard);
   render("[data-timeline]", content.vision?.timeline, timelineItem);
   render("[data-governance-roles]", content.team?.governance?.roles, governanceRole);
