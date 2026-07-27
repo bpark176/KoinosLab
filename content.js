@@ -274,8 +274,9 @@ window.koinosLabContent = {
     title: "An open network for practical science",
     lead:
       "Koinos Lab is built around a simple belief: more people can do meaningful science when tools, documentation, and community support are easier to reach.",
-    statement:
-      "Scientific access is not only about owning expensive equipment. It is about knowing what tools exist, understanding how to use them safely, and being connected to people who can help. Koinos Lab aims to turn isolated equipment and scattered knowledge into shared infrastructure for learning, research, and invention.",
+    quote:
+      "The important thing is to never stop questioning. Curiosity has its own reason for existing.",
+    quoteAttribution: "Albert Einstein",
     pillars: [
       {
         title: "Access over ownership",
