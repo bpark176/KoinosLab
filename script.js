@@ -60,16 +60,21 @@
   }
 
   function deviceRecord(item) {
+    const comingSoonClass = item.comingSoon ? " is-coming-soon" : "";
+
     return `
-      <article class="record-card">
+      <a class="record-card record-card-link${comingSoonClass}" href="${escapeHtml(item.href)}" aria-label="View ${escapeHtml(item.name)} project">
         <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.imageAlt)}" loading="lazy" />
         <div class="record-card-body">
           <p class="record-meta">${escapeHtml(item.type)}</p>
           <h3>${escapeHtml(item.name)}</h3>
           <p>${escapeHtml(item.description)}</p>
-          <span class="status-pill">${escapeHtml(item.status)}</span>
+          <div class="record-card-footer">
+            <span class="status-pill">${escapeHtml(item.status)}</span>
+            <span class="record-card-action">View project <span aria-hidden="true">&rarr;</span></span>
+          </div>
         </div>
-      </article>
+      </a>
     `;
   }
 
@@ -216,7 +221,7 @@
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     const targets = document.querySelectorAll(
-      ".section-heading, .mission-layout, .record-card, .publication-item, .principle-card, .process-card, .profile-card, .timeline-item, .governance-role"
+      ".section-heading, .mission-layout, .record-card, .publication-item, .principle-card, .process-card, .profile-card, .timeline-item, .governance-role, .project-doc-section, .coming-doc-grid > div"
     );
     if (!targets.length || !("IntersectionObserver" in window)) return;
 

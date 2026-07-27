@@ -58,44 +58,48 @@ window.koinosLabContent = {
       "The device library is organized around practical use, not just equipment names. Each entry should eventually include setup requirements, safety notes, example experiments, and availability.",
     items: [
       {
-        name: "Microscopy kit",
-        type: "Observation and imaging",
-        status: "Pilot catalog",
+        name: "Affordable Multispectral Spectrofluorometer",
+        type: "Fluorescence Spectroscopy",
+        status: "In development",
+        href: "./device-spectrofluorometer.html",
         image:
           "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=1000&q=82",
-        imageAlt: "A microscope prepared for scientific observation.",
+        imageAlt: "Fluorescent samples under controlled optical excitation.",
         description:
-          "Entry-level microscopes, prepared slides, phone mounts, and beginner guides for classroom or independent observation."
+          "A low-cost optical instrument for measuring and comparing fluorescence emission from dyes, quantum dots, and other samples."
       },
       {
-        name: "Electronics bench",
-        type: "Sensors and prototyping",
-        status: "Pilot catalog",
-        image:
-          "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=82",
-        imageAlt: "Close-up view of electronics and circuit components.",
+        name: "Open-Source Visible-Light Colorimeter",
+        type: "Absorbance Spectroscopy",
+        status: "Coming soon",
+        href: "./device-colorimeter.html",
+        image: "./assets/logos/koinos-reversed.svg",
+        imageAlt: "Koinos Lab logo marking an upcoming colorimeter project.",
         description:
-          "Microcontrollers, breadboards, meters, reusable components, and starter workflows for building simple scientific instruments."
+          "An educational instrument for estimating the concentration of colored solutions through visible-light absorption.",
+        comingSoon: true
       },
       {
-        name: "Field testing set",
-        type: "Environmental measurement",
-        status: "In development",
-        image:
-          "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=82",
-        imageAlt: "A natural landscape used for environmental field observation.",
+        name: "Portable Multiparameter Water-Quality Analyzer",
+        type: "Environmental Instrumentation",
+        status: "Coming soon",
+        href: "./device-water-quality-analyzer.html",
+        image: "./assets/logos/koinos-reversed.svg",
+        imageAlt: "Koinos Lab logo marking an upcoming water-quality analyzer project.",
         description:
-          "Portable kits for water, soil, and air measurements that support local data collection and community science projects."
+          "A field-ready platform planned for pH, conductivity, temperature, turbidity, and dissolved-solids measurements.",
+        comingSoon: true
       },
       {
-        name: "Fabrication toolkit",
-        type: "Design and repair",
-        status: "Planned",
-        image:
-          "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=1000&q=82",
-        imageAlt: "An engineering workbench used for prototyping and repair.",
+        name: "Open-Source Educational Potentiostat",
+        type: "Electrochemical Instrumentation",
+        status: "Coming soon",
+        href: "./device-potentiostat.html",
+        image: "./assets/logos/koinos-reversed.svg",
+        imageAlt: "Koinos Lab logo marking an upcoming potentiostat project.",
         description:
-          "Basic tools for enclosures, fixtures, repairs, and low-cost custom parts that keep scientific projects moving."
+          "A planned low-cost platform for controlled-potential electrochemistry and introductory voltammetry experiments.",
+        comingSoon: true
       }
     ],
     pathway: [
