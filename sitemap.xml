@@ -1,36 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.koinoslab.org/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <image:image>
+      <image:loc>https://www.koinoslab.org/assets/images/koinos-lab-open-source-scientific-instruments-social.jpg</image:loc>
+      <image:title>Koinos Lab branding over laboratory glassware</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.koinoslab.org/about.html</loc>
+    <lastmod>2026-07-27</lastmod>
+    <image:image>
+      <image:loc>https://www.koinoslab.org/assets/images/engineering-workstation-1920.webp</image:loc>
+      <image:title>Engineer working with scientific equipment and electronics</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.koinoslab.org/devices.html</loc>
-  </url>
-  <url>
-    <loc>https://www.koinoslab.org/device-spectrofluorometer.html</loc>
-  </url>
-  <url>
-    <loc>https://www.koinoslab.org/device-colorimeter.html</loc>
-  </url>
-  <url>
-    <loc>https://www.koinoslab.org/device-water-quality-analyzer.html</loc>
-  </url>
-  <url>
-    <loc>https://www.koinoslab.org/device-potentiostat.html</loc>
+    <lastmod>2026-07-27</lastmod>
+    <image:image>
+      <image:loc>https://www.koinoslab.org/assets/images/engineering-workstation-1920.webp</image:loc>
+      <image:title>Engineering workstation used to develop accessible scientific instruments</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.koinoslab.org/marketplace.html</loc>
+    <lastmod>2026-07-27</lastmod>
+    <image:image>
+      <image:loc>https://www.koinoslab.org/assets/images/lab-glassware-1920.webp</image:loc>
+      <image:title>Laboratory glassware prepared for scientific use</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.koinoslab.org/publications.html</loc>
+    <lastmod>2026-07-27</lastmod>
+    <image:image>
+      <image:loc>https://www.koinoslab.org/assets/images/research-documents-1920.webp</image:loc>
+      <image:title>Research documents and technical notes arranged on a worktable</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.koinoslab.org/vision.html</loc>
+    <lastmod>2026-07-27</lastmod>
+    <image:image>
+      <image:loc>https://www.koinoslab.org/assets/images/open-landscape-1920.webp</image:loc>
+      <image:title>Open landscape representing the broader reach of accessible science</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.koinoslab.org/team.html</loc>
+    <lastmod>2026-07-27</lastmod>
+    <image:image>
+      <image:loc>https://www.koinoslab.org/assets/images/research-team-1920.webp</image:loc>
+      <image:title>Research and engineering team collaborating around computers</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.koinoslab.org/devices/spectrofluorometer/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <image:image>
+      <image:loc>https://www.koinoslab.org/assets/images/affordable-multispectral-spectrofluorometer-social.jpg</image:loc>
+      <image:title>Fluorescent samples with Koinos Lab branding</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.koinoslab.org/devices/colorimeter/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <image:image>
+      <image:loc>https://www.koinoslab.org/assets/images/koinos-lab-open-source-scientific-instruments-social.jpg</image:loc>
+      <image:title>Koinos Lab branding over laboratory glassware</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.koinoslab.org/devices/water-quality-analyzer/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <image:image>
+      <image:loc>https://www.koinoslab.org/assets/images/koinos-lab-open-source-scientific-instruments-social.jpg</image:loc>
+      <image:title>Koinos Lab branding over laboratory glassware</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.koinoslab.org/devices/potentiostat/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <image:image>
+      <image:loc>https://www.koinoslab.org/assets/images/koinos-lab-open-source-scientific-instruments-social.jpg</image:loc>
+      <image:title>Koinos Lab branding over laboratory glassware</image:title>
+    </image:image>
   </url>
 </urlset>

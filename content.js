@@ -4,47 +4,59 @@ window.koinosLabContent = {
     eyebrow: "Research infrastructure for everyone",
     title: "Koinos Lab",
     lead:
-      "Koinos Lab is a scientific and engineering organization making devices, research tools, and practical learning resources more accessible to students and early-stage builders.",
+      "Koinos Lab develops affordable, open-source scientific instruments and practical technical resources for students, schools, and researchers.",
     missionEyebrow: "Organization overview",
     missionTitle: "Shared tools for practical science.",
     missionCopy:
-      "The initiative combines a device library, community marketplace, publication program, and open learning network so useful scientific equipment can circulate beyond traditional lab settings.",
+      "The initiative combines open-source scientific hardware, a device library, a community marketplace, and technical publications so useful instruments and knowledge can circulate beyond traditional lab settings.",
     previews: [
       {
         title: "Devices",
         label: "Shared instrument library",
         text: "Browse accessible scientific and engineering tools organized by use case, skill level, and project type.",
-        image:
-          "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=1200&q=82",
+        image: "/assets/images/engineering-workstation-960.webp",
+        imageSrcset:
+          "/assets/images/engineering-workstation-960.webp 960w, /assets/images/engineering-workstation-1920.webp 1920w",
+        imageWidth: 1920,
+        imageHeight: 1281,
         imageAlt: "An engineer testing equipment at a laboratory workstation.",
-        href: "./devices.html"
+        href: "/devices.html"
       },
       {
         title: "Marketplace",
         label: "Equipment exchange",
         text: "Support donations, lending, requests, and responsible reuse for lab equipment and educational tools.",
-        image:
-          "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=82",
+        image: "/assets/images/lab-glassware-960.webp",
+        imageSrcset:
+          "/assets/images/lab-glassware-960.webp 960w, /assets/images/lab-glassware-1920.webp 1920w",
+        imageWidth: 1920,
+        imageHeight: 1280,
         imageAlt: "Scientific glassware and research equipment in a laboratory.",
-        href: "./marketplace.html"
+        href: "/marketplace.html"
       },
       {
         title: "Publications",
         label: "Technical notes and reports",
         text: "Read guides, device briefs, field reports, and research notes from the Koinos Lab community.",
-        image:
-          "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=82",
+        image: "/assets/images/research-documents-960.webp",
+        imageSrcset:
+          "/assets/images/research-documents-960.webp 960w, /assets/images/research-documents-1920.webp 1920w",
+        imageWidth: 1920,
+        imageHeight: 1281,
         imageAlt: "Research notes and documents spread across a worktable.",
-        href: "./publications.html"
+        href: "/publications.html"
       },
       {
         title: "Vision",
         label: "Long-term direction",
         text: "Learn how Koinos Lab is building a practical network for accessible science, education, and engineering.",
-        image:
-          "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=82",
+        image: "/assets/images/open-landscape-960.webp",
+        imageSrcset:
+          "/assets/images/open-landscape-960.webp 960w, /assets/images/open-landscape-1920.webp 1920w",
+        imageWidth: 1920,
+        imageHeight: 1280,
         imageAlt: "A wide open landscape suggesting reach and possibility.",
-        href: "./vision.html"
+        href: "/vision.html"
       }
     ]
   },
@@ -53,7 +65,7 @@ window.koinosLabContent = {
     eyebrow: "Devices",
     title: "Device library",
     lead:
-      "Koinos Lab catalogs and shares scientific tools that help learners move from curiosity to measurement, prototyping, and experimentation.",
+      "Explore affordable, open-source scientific instruments for spectroscopy, environmental measurement, electrochemistry, learning, and research.",
     sidebar:
       "The device library is organized around practical use, not just equipment names. Each entry should eventually include setup requirements, safety notes, example experiments, and availability.",
     items: [
@@ -61,9 +73,12 @@ window.koinosLabContent = {
         name: "Affordable Multispectral Spectrofluorometer",
         type: "Fluorescence Spectroscopy",
         status: "In development",
-        href: "./device-spectrofluorometer.html",
-        image:
-          "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=1000&q=82",
+        href: "/devices/spectrofluorometer/",
+        image: "/assets/images/fluorescent-samples-960.webp",
+        imageSrcset:
+          "/assets/images/fluorescent-samples-960.webp 960w, /assets/images/fluorescent-samples-1920.webp 1920w",
+        imageWidth: 1920,
+        imageHeight: 1920,
         imageAlt: "Fluorescent samples under controlled optical excitation.",
         description:
           "A low-cost optical instrument for measuring and comparing fluorescence emission from dyes, quantum dots, and other samples."
@@ -72,8 +87,10 @@ window.koinosLabContent = {
         name: "Open-Source Visible-Light Colorimeter",
         type: "Absorbance Spectroscopy",
         status: "Coming soon",
-        href: "./device-colorimeter.html",
-        image: "./assets/logos/koinos-reversed.svg",
+        href: "/devices/colorimeter/",
+        image: "/assets/logos/koinos-reversed.svg",
+        imageWidth: 460,
+        imageHeight: 205,
         imageAlt: "Koinos Lab logo marking an upcoming colorimeter project.",
         description:
           "An educational instrument for estimating the concentration of colored solutions through visible-light absorption.",
@@ -83,8 +100,10 @@ window.koinosLabContent = {
         name: "Portable Multiparameter Water-Quality Analyzer",
         type: "Environmental Instrumentation",
         status: "Coming soon",
-        href: "./device-water-quality-analyzer.html",
-        image: "./assets/logos/koinos-reversed.svg",
+        href: "/devices/water-quality-analyzer/",
+        image: "/assets/logos/koinos-reversed.svg",
+        imageWidth: 460,
+        imageHeight: 205,
         imageAlt: "Koinos Lab logo marking an upcoming water-quality analyzer project.",
         description:
           "A field-ready platform planned for pH, conductivity, temperature, turbidity, and dissolved-solids measurements.",
@@ -94,8 +113,10 @@ window.koinosLabContent = {
         name: "Open-Source Educational Potentiostat",
         type: "Electrochemical Instrumentation",
         status: "Coming soon",
-        href: "./device-potentiostat.html",
-        image: "./assets/logos/koinos-reversed.svg",
+        href: "/devices/potentiostat/",
+        image: "/assets/logos/koinos-reversed.svg",
+        imageWidth: 460,
+        imageHeight: 205,
         imageAlt: "Koinos Lab logo marking an upcoming potentiostat project.",
         description:
           "A planned low-cost platform for controlled-potential electrochemistry and introductory voltammetry experiments.",
@@ -148,24 +169,33 @@ window.koinosLabContent = {
       {
         tag: "Donate",
         title: "Unused lab glassware",
-        image:
-          "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1000&q=82",
+        image: "/assets/images/lab-glassware-960.webp",
+        imageSrcset:
+          "/assets/images/lab-glassware-960.webp 960w, /assets/images/lab-glassware-1920.webp 1920w",
+        imageWidth: 1920,
+        imageHeight: 1280,
         imageAlt: "Laboratory glassware ready for reuse.",
         description: "Beakers, flasks, and non-hazardous starter supplies for classroom demonstrations."
       },
       {
         tag: "Borrow",
         title: "Portable microscope",
-        image:
-          "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=1000&q=82",
-        imageAlt: "A portable microscope for scientific observation.",
+        image: "/assets/images/fluorescent-samples-960.webp",
+        imageSrcset:
+          "/assets/images/fluorescent-samples-960.webp 960w, /assets/images/fluorescent-samples-1920.webp 1920w",
+        imageWidth: 1920,
+        imageHeight: 1920,
+        imageAlt: "Fluorescent biological samples shown in a microscopy image.",
         description: "Short-term access for workshops, fairs, field projects, or student research."
       },
       {
         tag: "Request",
         title: "Sensor modules",
-        image:
-          "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=82",
+        image: "/assets/images/sensor-circuit-960.webp",
+        imageSrcset:
+          "/assets/images/sensor-circuit-960.webp 960w, /assets/images/sensor-circuit-1920.webp 1920w",
+        imageWidth: 1920,
+        imageHeight: 1280,
         imageAlt: "Electronic sensor and circuit components.",
         description: "Community requests for low-cost sensors, data loggers, and repairable parts."
       }
@@ -365,7 +395,9 @@ window.koinosLabContent = {
             name: "Brennan Park",
             role: "Founder & CEO",
             affiliation: "Seoul International School",
-            photo: "./assets/logos/koinos-reversed.svg",
+            photo: "/assets/logos/koinos-reversed.svg",
+            imageWidth: 460,
+            imageHeight: 205,
             photoAlt: "Koinos Lab logo placeholder for Brennan Park.",
             placeholder: true
           },
@@ -373,7 +405,9 @@ window.koinosLabContent = {
             name: "Ian Kim",
             role: "Director of Engineering",
             affiliation: "Seoul International School",
-            photo: "./assets/logos/koinos-reversed.svg",
+            photo: "/assets/logos/koinos-reversed.svg",
+            imageWidth: 460,
+            imageHeight: 205,
             photoAlt: "Koinos Lab logo placeholder for Ian Kim.",
             placeholder: true
           },

@@ -702,6 +702,7 @@ h3 {
 
 .record-card > img {
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 10;
   object-fit: cover;
   transition: transform 500ms ease;
@@ -1134,6 +1135,7 @@ h3 {
 
 .profile-card img {
   width: 100%;
+  height: auto;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center top;
@@ -1226,6 +1228,32 @@ h3 {
   color: var(--white);
 }
 
+.project-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+  margin-bottom: 44px;
+  color: rgba(255, 253, 248, 0.68);
+  font-size: 0.82rem;
+  font-weight: 750;
+}
+
+.project-breadcrumb a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.project-breadcrumb a:hover,
+.project-breadcrumb a:focus-visible {
+  color: var(--gold-light);
+}
+
+.contextual-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+
 .project-status-row {
   display: flex;
   flex-wrap: wrap;
@@ -1252,6 +1280,7 @@ h3 {
 
 .project-hero-media img {
   width: 100%;
+  height: auto;
   aspect-ratio: 5 / 4;
   object-fit: cover;
 }
@@ -2304,6 +2333,10 @@ h3 {
   }
 
   .project-back-link {
+    margin-bottom: 34px;
+  }
+
+  .project-breadcrumb {
     margin-bottom: 34px;
   }
 

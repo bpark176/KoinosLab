@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO:START -->
+    <title>Affordable Open-Source Spectrofluorometer | Koinos Lab</title>
+    <meta name="description" content="Explore Koinos Lab's affordable open-source spectrofluorometer, including its design, specifications, bill of materials, calibration, safety, and validation plan." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://www.koinoslab.org/devices/spectrofluorometer/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Koinos Lab" />
+    <meta property="og:title" content="Affordable Open-Source Spectrofluorometer | Koinos Lab" />
+    <meta property="og:description" content="Explore Koinos Lab's affordable open-source spectrofluorometer, including its design, specifications, bill of materials, calibration, safety, and validation plan." />
+    <meta property="og:url" content="https://www.koinoslab.org/devices/spectrofluorometer/" />
+    <meta property="og:image" content="https://www.koinoslab.org/assets/images/affordable-multispectral-spectrofluorometer-social.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Fluorescent samples with Koinos Lab branding" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Affordable Open-Source Spectrofluorometer | Koinos Lab" />
+    <meta name="twitter:description" content="Explore Koinos Lab's affordable open-source spectrofluorometer, including its design, specifications, bill of materials, calibration, safety, and validation plan." />
+    <meta name="twitter:image" content="https://www.koinoslab.org/assets/images/affordable-multispectral-spectrofluorometer-social.jpg" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://www.koinoslab.org/devices/spectrofluorometer/#webpage",
+            "url": "https://www.koinoslab.org/devices/spectrofluorometer/",
+            "name": "Affordable Open-Source Spectrofluorometer | Koinos Lab",
+            "description": "Explore Koinos Lab's affordable open-source spectrofluorometer, including its design, specifications, bill of materials, calibration, safety, and validation plan.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.koinoslab.org/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://www.koinoslab.org/devices/spectrofluorometer/#breadcrumb"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://www.koinoslab.org/assets/images/affordable-multispectral-spectrofluorometer-social.jpg",
+              "width": 1200,
+              "height": 630
+            }
+          },
+          {
+            "@type": "TechArticle",
+            "@id": "https://www.koinoslab.org/devices/spectrofluorometer/#article",
+            "url": "https://www.koinoslab.org/devices/spectrofluorometer/",
+            "headline": "Affordable Multispectral Spectrofluorometer",
+            "name": "Affordable Open-Source Spectrofluorometer | Koinos Lab",
+            "description": "Explore Koinos Lab's affordable open-source spectrofluorometer, including its design, specifications, bill of materials, calibration, safety, and validation plan.",
+            "inLanguage": "en",
+            "mainEntityOfPage": {
+              "@id": "https://www.koinoslab.org/devices/spectrofluorometer/#webpage"
+            },
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://www.koinoslab.org/assets/images/affordable-multispectral-spectrofluorometer-social.jpg",
+              "width": 1200,
+              "height": 630
+            },
+            "author": {
+              "@id": "https://www.koinoslab.org/#organization"
+            },
+            "publisher": {
+              "@id": "https://www.koinoslab.org/#organization"
+            },
+            "keywords": [
+              "affordable spectrofluorometer",
+              "open-source spectrofluorometer",
+              "low-cost fluorescence spectrometer",
+              "fluorescence spectroscopy for schools"
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.koinoslab.org/devices/spectrofluorometer/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.koinoslab.org/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Devices",
+                "item": "https://www.koinoslab.org/devices.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Spectrofluorometer",
+                "item": "https://www.koinoslab.org/devices/spectrofluorometer/"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <!-- SEO:END -->
+    <link rel="icon" type="image/svg+xml" href="/assets/logos/koinos-icon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/logos/koinos-icon-32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/logos/koinos-icon-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/logos/koinos-icon-180.png" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body data-page="devices">
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="/" aria-label="Koinos Lab home">
+          <img class="brand-logo" src="/assets/logos/koinos-reversed.svg" alt="Koinos Lab" width="460" height="205" decoding="async" />
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary navigation" data-nav>
+          <a href="/about.html" data-nav-page="about">About</a>
+          <a href="/devices.html" data-nav-page="devices">Devices</a>
+          <a href="/marketplace.html" data-nav-page="marketplace">Marketplace</a>
+          <a href="/publications.html" data-nav-page="publications">Publications</a>
+          <a href="/vision.html" data-nav-page="vision">Vision</a>
+          <a href="/team.html" data-nav-page="team">Our team</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="project-hero">
+        <div class="section-shell project-hero-grid">
+          <div class="project-hero-copy">
+            <nav class="project-breadcrumb" aria-label="Breadcrumb">
+              <a href="/">Home</a><span aria-hidden="true">/</span>
+              <a href="/devices.html">Devices</a><span aria-hidden="true">/</span>
+              <span aria-current="page">Spectrofluorometer</span>
+            </nav>
+            <p class="eyebrow">Fluorescence spectroscopy</p>
+            <h1>Affordable Multispectral Spectrofluorometer</h1>
+            <p class="lead">
+              An open-source instrument in development for comparing fluorescence emission from quantum dots,
+              fluorescent dyes, and other samples without relying on a conventional laboratory fluorometer.
+            </p>
+            <div class="project-status-row" aria-label="Project status">
+              <span class="status-pill status-pill-gold">In development</span>
+              <span>Project 01</span>
+              <span>Pre-release documentation</span>
+            </div>
+          </div>
+          <figure class="project-hero-media">
+            <img
+              src="/assets/images/fluorescent-samples-1920.webp"
+              srcset="/assets/images/fluorescent-samples-960.webp 960w, /assets/images/fluorescent-samples-1920.webp 1920w"
+              sizes="100vw"
+              width="1920"
+              height="1920"
+              alt="Fluorescent samples under controlled optical excitation."
+              fetchpriority="high"
+              decoding="async"
+            />
+            <figcaption>
+              Fluorescence imaging shown as scientific context. Final device photography will be added after
+              prototype release.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="project-facts" aria-label="Project summary">
+        <div class="section-shell project-facts-grid">
+          <dl>
+            <dt>Primary field</dt>
+            <dd>Materials science, chemistry, and optics</dd>
+          </dl>
+          <dl>
+            <dt>Measurement</dt>
+            <dd>Relative multispectral fluorescence emission</dd>
+          </dl>
+          <dl>
+            <dt>Intended users</dt>
+            <dd>Students, educators, and early-stage researchers</dd>
+          </dl>
+          <dl>
+            <dt>Release state</dt>
+            <dd>Prototype architecture in development</dd>
+          </dl>
+        </div>
+      </section>
+
+      <section class="project-documentation">
+        <div class="section-shell project-doc-layout">
+          <aside class="project-index">
+            <p class="eyebrow">On this page</p>
+            <nav aria-label="Project documentation">
+              <a href="#overview">Overview</a>
+              <a href="#purpose">Purpose</a>
+              <a href="#how-it-works">How it works</a>
+              <a href="#specifications">Specifications</a>
+              <a href="#components">Components / BOM</a>
+              <a href="#blueprints">Blueprints / CAD</a>
+              <a href="#stl-files">STL files</a>
+              <a href="#wiring">Wiring / electronics</a>
+              <a href="#assembly">Assembly instructions</a>
+              <a href="#code">Code / firmware</a>
+              <a href="#calibration">Calibration</a>
+              <a href="#testing">Testing &amp; validation</a>
+              <a href="#data">Experimental data</a>
+              <a href="#results">Results</a>
+              <a href="#safety">Safety notes</a>
+              <a href="#downloads">Downloads / resources</a>
+              <a href="#publications">Related publications</a>
+            </nav>
+          </aside>
+
+          <div class="project-doc-content">
+            <section class="project-doc-section" id="overview">
+              <p class="eyebrow">Overview</p>
+              <h2>Lowering the barrier to fluorescence measurement</h2>
+              <p class="project-intro">
+                The Affordable Multispectral Spectrofluorometer is Koinos Lab's flagship instrument project. It
+                explores how much useful fluorescence-measurement capability can be reproduced using accessible
+                optical components, open-source electronics, and a light-controlled enclosure.
+              </p>
+              <p>
+                The first application is the comparison of fluorescence emission from CdSe quantum-dot samples.
+                The broader goal is an educational platform for investigating emission wavelength, fluorescent
+                dyes, nanomaterials, and optical spectroscopy.
+              </p>
+              <div class="project-note">
+                <strong>Development note</strong>
+                <p>
+                  This page documents the intended architecture and release standard. Final dimensions, component
+                  models, files, performance limits, and cost will be published only after prototype validation.
+                </p>
+              </div>
+            </section>
+
+            <section class="project-doc-section" id="purpose">
+              <p class="eyebrow">Purpose / What it does</p>
+              <h2>Measure meaningful differences in fluorescence emission</h2>
+              <p>
+                The instrument is intended to excite a sample with controlled ultraviolet light, isolate emitted
+                fluorescence from excitation light, and record relative intensity across multiple optical bands.
+                The resulting profile can support comparisons among samples without claiming the full resolution
+                of a research-grade scanning spectrofluorometer.
+              </p>
+              <ul class="project-list">
+                <li>Compare relative emission profiles from multiple fluorescent samples.</li>
+                <li>Investigate how quantum-dot size relates to observed emission characteristics.</li>
+                <li>Introduce excitation, emission, filtering, calibration, and measurement uncertainty.</li>
+                <li>Provide a reproducible platform for classroom and independent laboratory activities.</li>
+              </ul>
+            </section>
+
+            <section class="project-doc-section" id="how-it-works">
+              <p class="eyebrow">How it works</p>
+              <h2>From controlled excitation to a digital emission profile</h2>
+              <ol class="project-flow">
+                <li>
+                  <span>01</span>
+                  <div>
+                    <h3>Excite</h3>
+                    <p>A controlled UV source illuminates the sample inside a light-restricted enclosure.</p>
+                  </div>
+                </li>
+                <li>
+                  <span>02</span>
+                  <div>
+                    <h3>Separate</h3>
+                    <p>Optical geometry and filtering reduce direct excitation light reaching the detector.</p>
+                  </div>
+                </li>
+                <li>
+                  <span>03</span>
+                  <div>
+                    <h3>Detect</h3>
+                    <p>A multispectral optical sensor samples relative intensity across available wavelength bands.</p>
+                  </div>
+                </li>
+                <li>
+                  <span>04</span>
+                  <div>
+                    <h3>Process</h3>
+                    <p>A microcontroller applies dark-reference and calibration corrections to the raw readings.</p>
+                  </div>
+                </li>
+                <li>
+                  <span>05</span>
+                  <div>
+                    <h3>Report</h3>
+                    <p>Measurements are displayed locally and prepared for export to analysis software.</p>
+                  </div>
+                </li>
+              </ol>
+            </section>
+
+            <section class="project-doc-section" id="specifications">
+              <p class="eyebrow">Specifications</p>
+              <h2>Target system architecture</h2>
+              <div class="project-table-wrap">
+                <table class="project-table">
+                  <thead>
+                    <tr>
+                      <th>Parameter</th>
+                      <th>Current target</th>
+                      <th>Release status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Excitation</td>
+                      <td>Controlled ultraviolet LED source</td>
+                      <td>Component selection pending</td>
+                    </tr>
+                    <tr>
+                      <td>Detection</td>
+                      <td>Multispectral optical sensor</td>
+                      <td>Architecture selected</td>
+                    </tr>
+                    <tr>
+                      <td>Optical isolation</td>
+                      <td>Filtered, enclosed measurement path</td>
+                      <td>Prototype testing required</td>
+                    </tr>
+                    <tr>
+                      <td>Sample interface</td>
+                      <td>Repeatable removable sample holder</td>
+                      <td>Mechanical design pending</td>
+                    </tr>
+                    <tr>
+                      <td>Data acquisition</td>
+                      <td>Microcontroller-based acquisition and local processing</td>
+                      <td>Firmware in development</td>
+                    </tr>
+                    <tr>
+                      <td>Output</td>
+                      <td>Local display and digital data export</td>
+                      <td>Interface definition pending</td>
+                    </tr>
+                    <tr>
+                      <td>Enclosure</td>
+                      <td>3D-printed, light-controlled optical enclosure</td>
+                      <td>CAD in development</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="project-doc-section" id="components">
+              <p class="eyebrow">Components / Bill of Materials</p>
+              <h2>Subsystem-level BOM</h2>
+              <p>
+                Exact manufacturer part numbers, quantities, alternatives, suppliers, and verified cost will be
+                released after the prototype design is frozen.
+              </p>
+              <div class="project-table-wrap">
+                <table class="project-table">
+                  <thead>
+                    <tr>
+                      <th>Subsystem</th>
+                      <th>Required elements</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Excitation</td>
+                      <td>UV LED, driver, thermal management, optical mount</td>
+                      <td>Selection in progress</td>
+                    </tr>
+                    <tr>
+                      <td>Detection</td>
+                      <td>Multispectral sensor, optical filter, detector mount</td>
+                      <td>Prototype stage</td>
+                    </tr>
+                    <tr>
+                      <td>Electronics</td>
+                      <td>Microcontroller, power regulation, controls, display, connectors</td>
+                      <td>Architecture stage</td>
+                    </tr>
+                    <tr>
+                      <td>Mechanical</td>
+                      <td>Optical enclosure, sample holder, fasteners, light seals</td>
+                      <td>CAD pending</td>
+                    </tr>
+                    <tr>
+                      <td>Calibration</td>
+                      <td>Dark reference, stable fluorescent references, measurement fixtures</td>
+                      <td>Protocol pending</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="project-doc-section project-resource-section" id="blueprints">
+              <p class="eyebrow">Blueprints / CAD</p>
+              <h2>Mechanical source files</h2>
+              <p>
+                Editable CAD for the optical enclosure, sensor mount, excitation module, sample holder, and
+                assembly will be released after the first validated mechanical revision.
+              </p>
+              <div class="resource-row">
+                <span>Editable CAD package</span>
+                <strong>Not yet released</strong>
+              </div>
+            </section>
+
+            <section class="project-doc-section project-resource-section" id="stl-files">
+              <p class="eyebrow">STL Files</p>
+              <h2>Fabrication-ready exports</h2>
+              <p>
+                Print-oriented STL exports will include documented orientation, support, material, and tolerance
+                guidance. Files will not be published until fit and light-isolation checks are complete.
+              </p>
+              <div class="resource-row">
+                <span>STL fabrication package</span>
+                <strong>Not yet released</strong>
+              </div>
+            </section>
+
+            <section class="project-doc-section" id="wiring">
+              <p class="eyebrow">Wiring / Electronics</p>
+              <h2>Planned electronic architecture</h2>
+              <p>
+                The electronics connect the excitation source, multispectral detector, microcontroller, local
+                controls, display, and data interface. The released schematic will document voltage domains,
+                connector pinouts, grounding, current limits, and safe LED control.
+              </p>
+              <ul class="project-list">
+                <li>Regulated power input with documented protection and polarity.</li>
+                <li>Microcontroller interface to the multispectral sensor.</li>
+                <li>Current-controlled switching for the UV excitation source.</li>
+                <li>Local display, user controls, and data-export connection.</li>
+              </ul>
+              <div class="resource-row">
+                <span>Schematic and wiring diagram</span>
+                <strong>Draft in progress</strong>
+              </div>
+            </section>
+
+            <section class="project-doc-section" id="assembly">
+              <p class="eyebrow">Assembly Instructions</p>
+              <h2>Planned reproducible build sequence</h2>
+              <ol class="project-steps">
+                <li>Fabricate and inspect the enclosure and optical mounts.</li>
+                <li>Assemble the regulated power and control electronics.</li>
+                <li>Mount the detector, filter, excitation source, and sample interface.</li>
+                <li>Complete wiring checks before energizing the UV source.</li>
+                <li>Install firmware and verify sensor communication.</li>
+                <li>Seal the optical path and run dark-reference tests.</li>
+                <li>Complete calibration and validation before sample analysis.</li>
+              </ol>
+              <p class="project-small">
+                Final step-by-step photographs, tools, tolerances, and acceptance checks will accompany the first
+                released hardware revision.
+              </p>
+            </section>
+
+            <section class="project-doc-section" id="code">
+              <p class="eyebrow">Code / Firmware</p>
+              <h2>Acquisition, correction, and export</h2>
+              <p>The planned open-source software package will separate instrument control from data analysis.</p>
+              <div class="project-module-grid">
+                <div>
+                  <h3>Firmware</h3>
+                  <p>Sensor acquisition, excitation timing, controls, display, and data transfer.</p>
+                </div>
+                <div>
+                  <h3>Processing</h3>
+                  <p>Dark-reference subtraction, calibration factors, quality checks, and structured export.</p>
+                </div>
+                <div>
+                  <h3>Analysis</h3>
+                  <p>Visualization, sample comparison, metadata capture, and educational workflows.</p>
+                </div>
+              </div>
+              <div class="resource-row">
+                <span>Source-code repository</span>
+                <strong>Not yet public</strong>
+              </div>
+            </section>
+
+            <section class="project-doc-section" id="calibration">
+              <p class="eyebrow">Calibration</p>
+              <h2>Calibration before interpretation</h2>
+              <p>
+                Calibration will be designed to make repeated measurements comparable and to reveal the limits of
+                the multispectral detector. The final procedure will identify required references, environmental
+                conditions, acceptance limits, and recalibration intervals.
+              </p>
+              <ol class="project-steps">
+                <li>Warm up the excitation and detection electronics under controlled conditions.</li>
+                <li>Record dark readings with the excitation source disabled.</li>
+                <li>Measure stable references using fixed sample geometry and timing.</li>
+                <li>Calculate channel corrections and document residual variation.</li>
+                <li>Verify the calibration against held-out reference measurements.</li>
+              </ol>
+            </section>
+
+            <section class="project-doc-section" id="testing">
+              <p class="eyebrow">Testing &amp; Validation</p>
+              <h2>Evidence required before release</h2>
+              <div class="project-table-wrap">
+                <table class="project-table">
+                  <thead>
+                    <tr>
+                      <th>Test</th>
+                      <th>Question</th>
+                      <th>Current state</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Repeatability</td>
+                      <td>Does the same sample produce consistent readings?</td>
+                      <td>Protocol planned</td>
+                    </tr>
+                    <tr>
+                      <td>Reproducibility</td>
+                      <td>Do independently assembled units produce comparable results?</td>
+                      <td>Requires multiple builds</td>
+                    </tr>
+                    <tr>
+                      <td>Linearity</td>
+                      <td>How does response change across a controlled concentration series?</td>
+                      <td>Protocol planned</td>
+                    </tr>
+                    <tr>
+                      <td>Drift</td>
+                      <td>How stable are readings over time and temperature?</td>
+                      <td>Protocol planned</td>
+                    </tr>
+                    <tr>
+                      <td>Comparison</td>
+                      <td>How closely do measurements align with a professional reference instrument?</td>
+                      <td>Partner access required</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="project-doc-section" id="data">
+              <p class="eyebrow">Experimental Data</p>
+              <h2>Raw data will accompany every performance claim</h2>
+              <p>
+                Validation datasets will be published in machine-readable form with sample identifiers, acquisition
+                settings, calibration version, environmental conditions, exclusions, and analysis scripts.
+              </p>
+              <div class="resource-row">
+                <span>Raw validation dataset</span>
+                <strong>Data collection not started</strong>
+              </div>
+            </section>
+
+            <section class="project-doc-section" id="results">
+              <p class="eyebrow">Results</p>
+              <h2>No validated performance results yet</h2>
+              <p>
+                Koinos Lab will not publish accuracy, precision, detection-limit, wavelength, or cost claims until
+                the prototype has completed the documented validation process. Results will include both useful
+                capabilities and measured limitations.
+              </p>
+            </section>
+
+            <section class="project-doc-section project-safety" id="safety">
+              <p class="eyebrow">Safety Notes</p>
+              <h2>UV exposure and sample handling require controls</h2>
+              <ul class="project-list">
+                <li>Never operate the UV excitation source with the optical enclosure open.</li>
+                <li>Use interlocks or equivalent engineering controls in the released design.</li>
+                <li>Do not look directly into the excitation source or reflected UV light.</li>
+                <li>Follow applicable chemical handling and disposal procedures for every sample.</li>
+                <li>CdSe quantum dots may contain toxic cadmium; use only under qualified supervision and an approved safety protocol.</li>
+                <li>Verify wiring, polarity, current limits, insulation, and enclosure integrity before operation.</li>
+              </ul>
+              <p class="project-small">
+                This pre-release page is not a substitute for a completed risk assessment or laboratory safety
+                procedure.
+              </p>
+            </section>
+
+            <section class="project-doc-section" id="downloads">
+              <p class="eyebrow">Downloads / Resources</p>
+              <h2>Release package</h2>
+              <div class="download-list">
+                <div><span>Bill of materials</span><strong>Pending design freeze</strong></div>
+                <div><span>CAD and STL files</span><strong>Pending mechanical validation</strong></div>
+                <div><span>Schematic and wiring</span><strong>Draft in progress</strong></div>
+                <div><span>Firmware and analysis code</span><strong>Development in progress</strong></div>
+                <div><span>Assembly manual</span><strong>Pending prototype build</strong></div>
+                <div><span>Calibration and validation data</span><strong>Pending testing</strong></div>
+              </div>
+            </section>
+
+            <section class="project-doc-section" id="publications">
+              <p class="eyebrow">Related Publications</p>
+              <h2>Technical reporting will follow validation</h2>
+              <p>
+                No project-specific publication is available yet. Design notes, calibration methods, uncertainty
+                analysis, comparison experiments, and the final technical report will be linked here as they are
+                released.
+              </p>
+              <a class="text-link project-publication-link" href="/publications.html">
+                Visit Koinos Lab publications <span aria-hidden="true">&rarr;</span>
+              </a>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-shell footer-layout">
+        <div class="footer-brand">
+          <a href="/" aria-label="Koinos Lab home">
+            <img class="footer-logo" src="/assets/logos/koinos-reversed.svg" alt="Koinos Lab" width="460" height="205" decoding="async" />
+          </a>
+          <p>Making scientific tools accessible.</p>
+          <a class="footer-email" href="mailto:contact@koinoslab.org">contact@koinoslab.org</a>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="/about.html">About</a>
+          <a href="/devices.html">Devices</a>
+          <a href="/marketplace.html">Marketplace</a>
+          <a href="/publications.html">Publications</a>
+          <a href="/vision.html">Vision</a>
+          <a href="/team.html">Our team</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="/content.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>

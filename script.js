@@ -48,12 +48,12 @@
     return `
       <article class="preview-card">
         <a class="preview-card-link" href="${escapeHtml(item.href)}">
-          <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.imageAlt)}" loading="lazy" />
+          ${responsiveImage(item, "(max-width: 760px) 100vw, 50vw")}
           <span class="preview-card-body">
             <span class="preview-card-label">${escapeHtml(item.label)}</span>
             <strong>${escapeHtml(item.title)}</strong>
             <span class="preview-card-copy">${escapeHtml(item.text)}</span>
-            <span class="text-link">Explore area</span>
+            <span class="text-link">Explore ${escapeHtml(item.title.toLowerCase())}</span>
           </span>
         </a>
       </article>
@@ -65,14 +65,14 @@
 
     return `
       <a class="record-card record-card-link${comingSoonClass}" href="${escapeHtml(item.href)}" aria-label="View ${escapeHtml(item.name)} project">
-        <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.imageAlt)}" loading="lazy" />
+        ${responsiveImage(item, "(max-width: 760px) 100vw, 36vw")}
         <div class="record-card-body">
           <p class="record-meta">${escapeHtml(item.type)}</p>
           <h3>${escapeHtml(item.name)}</h3>
           <p>${escapeHtml(item.description)}</p>
           <div class="record-card-footer">
             <span class="status-pill">${escapeHtml(item.status)}</span>
-            <span class="record-card-action">View project <span aria-hidden="true">&rarr;</span></span>
+            <span class="record-card-action">View documentation <span aria-hidden="true">&rarr;</span></span>
           </div>
         </div>
       </a>
@@ -92,7 +92,7 @@
   function marketplaceRecord(item) {
     return `
       <article class="record-card marketplace-record">
-        <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.imageAlt)}" loading="lazy" />
+        ${responsiveImage(item, "(max-width: 760px) 100vw, 36vw")}
         <div class="record-card-body">
           <p class="record-meta">${escapeHtml(item.tag)}</p>
           <h3>${escapeHtml(item.title)}</h3>
@@ -172,7 +172,15 @@
 
     return `
       <article class="profile-card${placeholderClass}">
-        <img src="${escapeHtml(item.photo)}" alt="${escapeHtml(item.photoAlt || `Profile photo placeholder for ${item.name}.`)}" loading="lazy" />
+        ${responsiveImage(
+          {
+            image: item.photo,
+            imageAlt: item.photoAlt || `Profile photo placeholder for ${item.name}.`,
+            imageWidth: item.imageWidth || 460,
+            imageHeight: item.imageHeight || 205
+          },
+          "(max-width: 760px) 100vw, 25vw"
+        )}
         <div class="profile-card-body">
           <h3>${escapeHtml(item.name)}</h3>
           <p class="profile-role">${escapeHtml(item.role)}</p>
@@ -180,6 +188,18 @@
         </div>
       </article>
     `;
+  }
+
+  function responsiveImage(item, sizes) {
+    const srcset = item.imageSrcset
+      ? ` srcset="${escapeHtml(item.imageSrcset)}" sizes="${escapeHtml(sizes)}"`
+      : "";
+    const width = Number(item.imageWidth) || 960;
+    const height = Number(item.imageHeight) || 640;
+
+    return `<img src="${escapeHtml(item.image)}"${srcset} width="${width}" height="${height}" alt="${escapeHtml(
+      item.imageAlt || ""
+    )}" loading="lazy" decoding="async" />`;
   }
 
   function getValue(source, path) {

@@ -1,0 +1,8 @@
+{
+  "name": "koinos-lab-website",
+  "private": true,
+  "scripts": {
+    "seo:generate": "node scripts/generate-seo.mjs",
+    "seo:check": "node scripts/validate-seo.mjs"
+  }
+}
