@@ -272,8 +272,7 @@ window.koinosLabContent = {
               "https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=900&q=80",
             photoAlt: "Professional portrait placeholder for Brennan Park.",
             bio:
-              "Leads Koinos Lab's mission, product direction, partnerships, and long-term strategy for accessible scientific infrastructure.",
-            emphasis: true
+              "Leads Koinos Lab's mission, product direction, partnerships, and long-term strategy for accessible scientific infrastructure."
           },
           {
             name: "Research Lead",

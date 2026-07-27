@@ -149,9 +149,8 @@
   }
 
   function profileCard(item) {
-    const classes = item.emphasis ? "profile-card is-primary" : "profile-card";
     return `
-      <article class="${classes}">
+      <article class="profile-card">
         <img src="${escapeHtml(item.photo)}" alt="${escapeHtml(item.photoAlt || `Profile photo placeholder for ${item.name}.`)}" loading="lazy" />
         <div class="profile-card-body">
           <p>${escapeHtml(item.role)}</p>
