@@ -610,6 +610,15 @@ h3 {
   margin-bottom: 30px;
 }
 
+.team-category[data-team-category="advisors"] .team-category-header {
+  width: 100%;
+}
+
+.team-category[data-team-category="advisors"] .team-category-header h2 {
+  max-width: none;
+  white-space: nowrap;
+}
+
 .profile-card {
   overflow: hidden;
 }
@@ -763,6 +772,10 @@ h3 {
 
   .team-tabs {
     top: 74px;
+  }
+
+  .team-category[data-team-category="advisors"] .team-category-header h2 {
+    white-space: normal;
   }
 
   .home-hero,
