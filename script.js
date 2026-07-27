@@ -16,8 +16,9 @@
   render("[data-publication-categories]", content.publications?.categories, principleCard);
   render("[data-vision-pillars]", content.vision?.pillars, principleCard);
   render("[data-timeline]", content.vision?.timeline, timelineItem);
-  render("[data-team]", content.team?.members, teamCard);
-  render("[data-advisors]", content.team?.advisors, advisorRecord);
+  render("[data-governance-roles]", content.team?.governance?.roles, governanceRole);
+  render("[data-team-groups]", content.team?.groups, teamGroup);
+  setupTeamFilters();
 
   const page = document.body.dataset.page;
   document.querySelectorAll("[data-nav-page]").forEach((link) => {
@@ -120,24 +121,42 @@
     `;
   }
 
-  function teamCard(item) {
+  function governanceRole(item) {
     return `
-      <article class="team-card">
-        <div class="avatar" aria-hidden="true">${escapeHtml(initials(item.name))}</div>
-        <p>${escapeHtml(item.role)}</p>
-        <h3>${escapeHtml(item.name)}</h3>
-        <span>${escapeHtml(item.focus)}</span>
+      <article class="governance-role">
+        <span aria-hidden="true"></span>
+        <div>
+          <h3>${escapeHtml(item.title)}</h3>
+          <p>${escapeHtml(item.text)}</p>
+        </div>
       </article>
     `;
   }
 
-  function advisorRecord(item) {
+  function teamGroup(group) {
     return `
-      <article class="record-card">
-        <div>
-          <p class="record-meta">${escapeHtml(item.type)}</p>
+      <section class="team-category" data-team-category="${escapeHtml(group.id)}">
+        <div class="team-category-header">
+          <p class="eyebrow">${escapeHtml(group.eyebrow)}</p>
+          <h2>${escapeHtml(group.title)}</h2>
+          <p>${escapeHtml(group.description)}</p>
+        </div>
+        <div class="profile-grid">
+          ${group.people.map(profileCard).join("")}
+        </div>
+      </section>
+    `;
+  }
+
+  function profileCard(item) {
+    const classes = item.emphasis ? "profile-card is-primary" : "profile-card";
+    return `
+      <article class="${classes}">
+        <img src="${escapeHtml(item.photo)}" alt="${escapeHtml(item.photoAlt || `Profile photo placeholder for ${item.name}.`)}" loading="lazy" />
+        <div class="profile-card-body">
+          <p>${escapeHtml(item.role)}</p>
           <h3>${escapeHtml(item.name)}</h3>
-          <p>${escapeHtml(item.description)}</p>
+          <span>${escapeHtml(item.bio)}</span>
         </div>
       </article>
     `;
@@ -155,6 +174,28 @@
       .map((part) => part[0])
       .join("")
       .toUpperCase();
+  }
+
+  function setupTeamFilters() {
+    const filterButtons = document.querySelectorAll("[data-team-filter]");
+    const categories = document.querySelectorAll("[data-team-category]");
+    if (!filterButtons.length || !categories.length) return;
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const selected = button.dataset.teamFilter;
+        filterButtons.forEach((item) => {
+          const isActive = item === button;
+          item.classList.toggle("is-active", isActive);
+          item.setAttribute("aria-pressed", String(isActive));
+        });
+
+        categories.forEach((category) => {
+          const isVisible = selected === "all" || category.dataset.teamCategory === selected;
+          category.hidden = !isVisible;
+        });
+      });
+    });
   }
 
   function escapeHtml(value) {

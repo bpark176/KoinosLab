@@ -230,43 +230,142 @@ window.koinosLabContent = {
 
   team: {
     eyebrow: "Our team",
-    title: "People building Koinos Lab",
+    title: "Governance and team",
     lead:
-      "Koinos Lab is led by students and collaborators interested in scientific access, engineering education, and practical research infrastructure.",
-    sidebar:
-      "Use this area for mentors, advisors, partner organizations, or committee roles once those details are ready.",
-    members: [
+      "Koinos Lab is organized as a research and engineering initiative with defined leadership, advisory oversight, and project teams focused on scientific access.",
+    governance: {
+      eyebrow: "Governance structure",
+      title: "A clear operating model for research, validation, and outreach.",
+      copy:
+        "The organization is led by the Founder & CEO, supported by directors responsible for research validation and outreach. Advisors provide technical, scientific, and community guidance, while members contribute to device documentation, marketplace operations, and publications.",
+      roles: [
+        {
+          title: "Executive leadership",
+          text: "Founder & CEO sets organizational direction, partnerships, and program priorities."
+        },
+        {
+          title: "Research & validation",
+          text: "The research director establishes evidence standards, device review practices, and publication quality."
+        },
+        {
+          title: "Outreach",
+          text: "The outreach director manages community relationships, partner engagement, and public-facing programs."
+        },
+        {
+          title: "Advisory board",
+          text: "Advisors review technical decisions and help connect Koinos Lab with scientific and engineering communities."
+        }
+      ]
+    },
+    groups: [
       {
-        name: "Brennan Park",
-        role: "Founder",
-        focus: "Koinos Lab vision, partnerships, product direction, and early program development."
+        id: "leadership",
+        eyebrow: "Leadership",
+        title: "Executive and program directors",
+        description:
+          "Leadership is responsible for institutional direction, research standards, partner relationships, and the quality of public-facing programs.",
+        people: [
+          {
+            name: "Brennan Park",
+            role: "Founder & CEO",
+            photo:
+              "https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=900&q=80",
+            photoAlt: "Professional portrait placeholder for Brennan Park.",
+            bio:
+              "Leads Koinos Lab's mission, product direction, partnerships, and long-term strategy for accessible scientific infrastructure.",
+            emphasis: true
+          },
+          {
+            name: "Research Lead",
+            role: "Director of Research & Validation",
+            photo:
+              "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=900&q=80",
+            photoAlt: "Professional portrait placeholder for the Director of Research and Validation.",
+            bio:
+              "Oversees device evaluation, documentation standards, safety review, and validation methods for Koinos Lab resources."
+          },
+          {
+            name: "Outreach Lead",
+            role: "Director of Outreach",
+            photo:
+              "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80",
+            photoAlt: "Professional portrait placeholder for the Director of Outreach.",
+            bio:
+              "Builds relationships with schools, research groups, makerspaces, and community partners that can use or support shared tools."
+          }
+        ]
       },
       {
-        name: "Team member",
-        role: "Devices lead",
-        focus: "Equipment cataloging, beginner documentation, maintenance workflows, and kit design."
+        id: "advisors",
+        eyebrow: "Advisors",
+        title: "Scientific and engineering advisors",
+        description:
+          "Advisors provide outside perspective on technical rigor, safety, feasibility, and responsible growth.",
+        people: [
+          {
+            name: "Scientific Advisor",
+            role: "Advisor, Scientific Review",
+            photo:
+              "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80",
+            photoAlt: "Professional portrait placeholder for a scientific advisor.",
+            bio:
+              "Reviews scientific accuracy, experimental framing, and the educational usefulness of device guides and publications."
+          },
+          {
+            name: "Engineering Advisor",
+            role: "Advisor, Engineering Systems",
+            photo:
+              "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80",
+            photoAlt: "Professional portrait placeholder for an engineering advisor.",
+            bio:
+              "Advises on prototyping, instrumentation, repairability, fabrication workflows, and technical documentation."
+          },
+          {
+            name: "Community Advisor",
+            role: "Advisor, Partnerships",
+            photo:
+              "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=900&q=80",
+            photoAlt: "Professional portrait placeholder for a community advisor.",
+            bio:
+              "Supports responsible engagement with schools, libraries, clubs, and community science organizations."
+          }
+        ]
       },
       {
-        name: "Team member",
-        role: "Marketplace lead",
-        focus: "Equipment exchange, safety rules, listing standards, and community requests."
-      }
-    ],
-    advisors: [
-      {
-        name: "Scientific advisor",
-        type: "Placeholder role",
-        description: "Advises on device safety, scientific accuracy, and responsible tool use."
-      },
-      {
-        name: "Engineering mentor",
-        type: "Placeholder role",
-        description: "Supports prototyping, repair, fabrication, and instrumentation projects."
-      },
-      {
-        name: "Community partner",
-        type: "Placeholder role",
-        description: "Connects Koinos Lab resources with schools, clubs, libraries, or research groups."
+        id: "members",
+        eyebrow: "Members",
+        title: "Project and research team",
+        description:
+          "Members contribute to the device library, marketplace operations, publications, and practical research projects.",
+        people: [
+          {
+            name: "Device Library Member",
+            role: "Device Documentation",
+            photo:
+              "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=900&q=80",
+            photoAlt: "Project team photo placeholder for device documentation.",
+            bio:
+              "Catalogs scientific tools, writes beginner-friendly instructions, and prepares device entries for public use."
+          },
+          {
+            name: "Marketplace Member",
+            role: "Equipment Exchange",
+            photo:
+              "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80",
+            photoAlt: "Project team photo placeholder for marketplace operations.",
+            bio:
+              "Supports listings, requests, responsible handoff practices, and equipment reuse workflows."
+          },
+          {
+            name: "Publications Member",
+            role: "Research Communication",
+            photo:
+              "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80",
+            photoAlt: "Project team photo placeholder for publications work.",
+            bio:
+              "Helps turn device findings, field reports, and technical notes into clear publication-ready resources."
+          }
+        ]
       }
     ]
   }

@@ -52,21 +52,26 @@
 
       <section class="section">
         <div class="section-shell">
-          <div class="section-heading narrow">
-            <p class="eyebrow">Leadership</p>
-            <h2>Core team</h2>
+          <div class="governance-panel">
+            <div>
+              <p class="eyebrow" data-field="team.governance.eyebrow"></p>
+              <h2 data-field="team.governance.title"></h2>
+              <p data-field="team.governance.copy"></p>
+            </div>
+            <div class="governance-roles" data-governance-roles></div>
           </div>
-          <div class="team-grid" data-team></div>
         </div>
       </section>
 
-      <section class="section section-light">
-        <div class="section-shell content-grid">
-          <aside class="sidebar-note">
-            <h2>Advisory roles</h2>
-            <p data-field="team.sidebar"></p>
-          </aside>
-          <div class="record-list" data-advisors></div>
+      <section class="section section-light team-directory-section">
+        <div class="section-shell">
+          <div class="team-tabs" aria-label="Team directory filters">
+            <button type="button" class="is-active" data-team-filter="all" aria-pressed="true">All</button>
+            <button type="button" data-team-filter="leadership" aria-pressed="false">Leadership</button>
+            <button type="button" data-team-filter="advisors" aria-pressed="false">Advisors</button>
+            <button type="button" data-team-filter="members" aria-pressed="false">Members</button>
+          </div>
+          <div class="team-groups" data-team-groups></div>
         </div>
       </section>
     </main>
