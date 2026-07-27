@@ -375,10 +375,11 @@ window.koinosLabContent = {
           },
           {
             name: "Research Lead",
-            role: "Director of Research & Validation",
+            role: "Director of Research",
+            affiliation: "Koinos Lab",
             photo:
               "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80",
-            photoAlt: "Professional portrait placeholder for the Director of Research and Validation."
+            photoAlt: "Professional portrait placeholder for the Director of Research."
           },
           {
             name: "To Be Announced",
@@ -417,6 +418,14 @@ window.koinosLabContent = {
             photo:
               "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=900&q=80",
             photoAlt: "Professional portrait placeholder for a community advisor."
+          },
+          {
+            name: "To Be Announced",
+            role: "Advisory Position",
+            affiliation: "Koinos Lab",
+            photo: "./assets/logos/koinos-reversed.svg",
+            photoAlt: "Koinos Lab logo marking a future advisory position.",
+            placeholder: true
           }
         ]
       },
@@ -447,6 +456,14 @@ window.koinosLabContent = {
             photo:
               "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80",
             photoAlt: "Project team photo placeholder for publications work."
+          },
+          {
+            name: "To Be Announced",
+            role: "Team Member",
+            affiliation: "Koinos Lab",
+            photo: "./assets/logos/koinos-reversed.svg",
+            photoAlt: "Koinos Lab logo marking a future team member.",
+            placeholder: true
           }
         ]
       }
