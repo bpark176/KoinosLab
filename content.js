@@ -374,15 +374,15 @@ window.koinosLabContent = {
             photoAlt: "Professional portrait placeholder for Ian Kim."
           },
           {
-            name: "Outreach Lead",
-            role: "Director of Outreach",
+            name: "Research Lead",
+            role: "Director of Research & Validation",
             photo:
               "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80",
-            photoAlt: "Professional portrait placeholder for the Director of Outreach."
+            photoAlt: "Professional portrait placeholder for the Director of Research and Validation."
           },
           {
             name: "To Be Announced",
-            role: "Leadership Position",
+            role: "Director of Outreach",
             affiliation: "Koinos Lab",
             photo: "./assets/logos/koinos-reversed.svg",
             photoAlt: "Koinos Lab logo marking a future leadership position.",
