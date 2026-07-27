@@ -97,22 +97,6 @@ h3 {
   backdrop-filter: blur(16px);
 }
 
-.topline {
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
-  min-height: 34px;
-  padding: 8px clamp(20px, 5vw, 64px);
-  color: rgba(255, 253, 248, 0.86);
-  background: var(--green-dark);
-  font-size: 0.76rem;
-  font-weight: 700;
-}
-
-.topline a {
-  color: #f1d68a;
-}
-
 .nav-shell {
   display: flex;
   align-items: center;
@@ -555,7 +539,7 @@ h3 {
 .team-tabs {
   position: sticky;
   z-index: 12;
-  top: 117px;
+  top: 82px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 4px;
@@ -663,6 +647,14 @@ h3 {
   color: rgba(255, 253, 248, 0.66);
 }
 
+.footer-email {
+  display: inline-flex;
+  margin-top: 7px;
+  color: #f1d68a;
+  font-size: 0.9rem;
+  font-weight: 850;
+}
+
 .site-footer nav {
   display: flex;
   flex-wrap: wrap;
@@ -713,10 +705,6 @@ h3 {
 }
 
 @media (max-width: 860px) {
-  .topline {
-    display: none;
-  }
-
   .nav-shell {
     min-height: 74px;
   }
