@@ -125,36 +125,14 @@ h3 {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 13px;
-  min-width: 225px;
+  flex: 0 0 auto;
+  min-width: 218px;
 }
 
-.brand-mark {
-  display: grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  border: 2px solid var(--green);
-  color: var(--green);
-  border-radius: 50%;
-  font-size: 0.82rem;
-  font-weight: 900;
-}
-
-.brand strong {
+.brand-logo {
   display: block;
-  color: var(--green-dark);
-  font-size: 1.24rem;
-  line-height: 1.05;
-}
-
-.brand small {
-  display: block;
-  margin-top: 3px;
-  color: var(--muted);
-  font-size: 0.72rem;
-  font-weight: 800;
-  text-transform: uppercase;
+  width: 218px;
+  height: auto;
 }
 
 .site-nav {
@@ -323,6 +301,16 @@ h3 {
 .team-category-header p,
 .profile-card span {
   color: var(--muted);
+}
+
+.mission-heading {
+  display: grid;
+  gap: 18px;
+}
+
+.mission-badge {
+  width: 84px;
+  height: auto;
 }
 
 .section-heading {
@@ -657,11 +645,21 @@ h3 {
 .footer-layout {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 32px;
 }
 
+.footer-brand {
+  max-width: 330px;
+}
+
+.footer-logo {
+  width: 188px;
+  height: auto;
+}
+
 .site-footer p {
-  margin: 4px 0 0;
+  margin: 10px 0 0;
   color: rgba(255, 253, 248, 0.66);
 }
 
@@ -727,8 +725,8 @@ h3 {
     min-width: 0;
   }
 
-  .brand small {
-    display: none;
+  .brand-logo {
+    width: 176px;
   }
 
   .nav-toggle {
@@ -859,5 +857,9 @@ h3 {
 
   .site-footer nav {
     justify-content: flex-start;
+  }
+
+  .footer-layout {
+    align-items: start;
   }
 }
