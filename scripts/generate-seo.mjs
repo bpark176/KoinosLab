@@ -104,6 +104,13 @@ function buildSeoBlock(page) {
     <meta name="description" content="${escapeHtml(page.description)}" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="canonical" href="${url}" />
+    <script>
+      if (window.location.hostname === "koinoslab.org") {
+        window.location.replace(
+          "https://www.koinoslab.org" + window.location.pathname + window.location.search + window.location.hash
+        );
+      }
+    </script>
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="${page.schemaType === "TechArticle" ? "article" : "website"}" />
     <meta property="og:site_name" content="${organization.name}" />

@@ -22,6 +22,9 @@ for (const page of pages) {
   checkExact(page, "og:image", readMeta(html, "property", "og:image"), `${baseUrl}${page.image}`);
   checkExact(page, "twitter:title", readMeta(html, "name", "twitter:title"), page.title);
   checkExact(page, "twitter:description", readMeta(html, "name", "twitter:description"), page.description);
+  if (!html.includes('window.location.hostname === "koinoslab.org"')) {
+    errors.push(`${page.file}: missing apex-to-www host redirect`);
+  }
 
   const robots = readMeta(html, "name", "robots");
   if (!robots?.includes("index") || robots.includes("noindex")) {
