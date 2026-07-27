@@ -351,27 +351,21 @@ window.koinosLabContent = {
             role: "Founder & CEO",
             photo:
               "https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=900&q=80",
-            photoAlt: "Professional portrait placeholder for Brennan Park.",
-            bio:
-              "Leads Koinos Lab's mission, product direction, partnerships, and long-term strategy for accessible scientific infrastructure."
+            photoAlt: "Professional portrait placeholder for Brennan Park."
           },
           {
             name: "Ian Kim",
             role: "Director of Research & Validation",
             photo:
               "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=900&q=80",
-            photoAlt: "Professional portrait placeholder for the Director of Research and Validation.",
-            bio:
-              "Oversees device evaluation, documentation standards, safety review, and validation methods for Koinos Lab resources."
+            photoAlt: "Professional portrait placeholder for the Director of Research and Validation."
           },
           {
             name: "Outreach Lead",
             role: "Director of Outreach",
             photo:
               "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80",
-            photoAlt: "Professional portrait placeholder for the Director of Outreach.",
-            bio:
-              "Builds relationships with schools, research groups, makerspaces, and community partners that can use or support shared tools."
+            photoAlt: "Professional portrait placeholder for the Director of Outreach."
           }
         ]
       },
@@ -387,27 +381,21 @@ window.koinosLabContent = {
             role: "Advisor, Scientific Review",
             photo:
               "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80",
-            photoAlt: "Professional portrait placeholder for a scientific advisor.",
-            bio:
-              "Reviews scientific accuracy, experimental framing, and the educational usefulness of device guides and publications."
+            photoAlt: "Professional portrait placeholder for a scientific advisor."
           },
           {
             name: "Engineering Advisor",
             role: "Advisor, Engineering Systems",
             photo:
               "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80",
-            photoAlt: "Professional portrait placeholder for an engineering advisor.",
-            bio:
-              "Advises on prototyping, instrumentation, repairability, fabrication workflows, and technical documentation."
+            photoAlt: "Professional portrait placeholder for an engineering advisor."
           },
           {
             name: "Community Advisor",
             role: "Advisor, Partnerships",
             photo:
               "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=900&q=80",
-            photoAlt: "Professional portrait placeholder for a community advisor.",
-            bio:
-              "Supports responsible engagement with schools, libraries, clubs, and community science organizations."
+            photoAlt: "Professional portrait placeholder for a community advisor."
           }
         ]
       },
@@ -423,27 +411,21 @@ window.koinosLabContent = {
             role: "Device Documentation",
             photo:
               "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=900&q=80",
-            photoAlt: "Project team photo placeholder for device documentation.",
-            bio:
-              "Catalogs scientific tools, writes beginner-friendly instructions, and prepares device entries for public use."
+            photoAlt: "Project team photo placeholder for device documentation."
           },
           {
             name: "Marketplace Member",
             role: "Equipment Exchange",
             photo:
               "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80",
-            photoAlt: "Project team photo placeholder for marketplace operations.",
-            bio:
-              "Supports listings, requests, responsible handoff practices, and equipment reuse workflows."
+            photoAlt: "Project team photo placeholder for marketplace operations."
           },
           {
             name: "Publications Member",
             role: "Research Communication",
             photo:
               "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80",
-            photoAlt: "Project team photo placeholder for publications work.",
-            bio:
-              "Helps turn device findings, field reports, and technical notes into clear publication-ready resources."
+            photoAlt: "Project team photo placeholder for publications work."
           }
         ]
       }

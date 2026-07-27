@@ -159,13 +159,17 @@
   }
 
   function profileCard(item) {
+    const affiliation = item.affiliation
+      ? `<p class="profile-affiliation">${escapeHtml(item.affiliation)}</p>`
+      : "";
+
     return `
       <article class="profile-card">
         <img src="${escapeHtml(item.photo)}" alt="${escapeHtml(item.photoAlt || `Profile photo placeholder for ${item.name}.`)}" loading="lazy" />
         <div class="profile-card-body">
-          <p>${escapeHtml(item.role)}</p>
           <h3>${escapeHtml(item.name)}</h3>
-          <span>${escapeHtml(item.bio)}</span>
+          <p class="profile-role">${escapeHtml(item.role)}</p>
+          ${affiliation}
         </div>
       </article>
     `;
