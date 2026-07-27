@@ -308,7 +308,7 @@ window.koinosLabContent = {
               "Leads Koinos Lab's mission, product direction, partnerships, and long-term strategy for accessible scientific infrastructure."
           },
           {
-            name: "Research Lead",
+            name: "Ian Kim",
             role: "Director of Research & Validation",
             photo:
               "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=900&q=80",
