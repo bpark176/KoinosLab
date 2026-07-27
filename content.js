@@ -360,16 +360,18 @@ window.koinosLabContent = {
           {
             name: "Brennan Park",
             role: "Founder & CEO",
+            affiliation: "Seoul International School",
             photo:
               "https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=900&q=80",
             photoAlt: "Professional portrait placeholder for Brennan Park."
           },
           {
             name: "Ian Kim",
-            role: "Director of Research & Validation",
+            role: "Director of Engineering",
+            affiliation: "Seoul International School",
             photo:
               "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=900&q=80",
-            photoAlt: "Professional portrait placeholder for the Director of Research and Validation."
+            photoAlt: "Professional portrait placeholder for Ian Kim."
           },
           {
             name: "Outreach Lead",

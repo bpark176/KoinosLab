@@ -802,10 +802,16 @@ h3 {
 
 .principle-grid,
 .process-grid,
-.team-grid,
-.profile-grid {
+.team-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
   gap: 22px;
 }
 
@@ -1261,6 +1267,10 @@ h3 {
 
   .catalog-section .record-list {
     grid-template-columns: 1fr;
+  }
+
+  .profile-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
