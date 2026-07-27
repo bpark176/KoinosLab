@@ -162,9 +162,10 @@
     const affiliation = item.affiliation
       ? `<p class="profile-affiliation">${escapeHtml(item.affiliation)}</p>`
       : "";
+    const placeholderClass = item.placeholder ? " profile-card-placeholder" : "";
 
     return `
-      <article class="profile-card">
+      <article class="profile-card${placeholderClass}">
         <img src="${escapeHtml(item.photo)}" alt="${escapeHtml(item.photoAlt || `Profile photo placeholder for ${item.name}.`)}" loading="lazy" />
         <div class="profile-card-body">
           <h3>${escapeHtml(item.name)}</h3>

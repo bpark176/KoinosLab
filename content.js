@@ -379,6 +379,14 @@ window.koinosLabContent = {
             photo:
               "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80",
             photoAlt: "Professional portrait placeholder for the Director of Outreach."
+          },
+          {
+            name: "To Be Announced",
+            role: "Leadership Position",
+            affiliation: "Koinos Lab",
+            photo: "./assets/logos/koinos-reversed.svg",
+            photoAlt: "Koinos Lab logo marking a future leadership position.",
+            placeholder: true
           }
         ]
       },

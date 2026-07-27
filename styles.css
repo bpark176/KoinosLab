@@ -1103,6 +1103,12 @@ h3 {
     transform 500ms ease;
 }
 
+.profile-card-placeholder img {
+  padding: 22%;
+  object-fit: contain;
+  background: var(--purple-dark);
+}
+
 .profile-card:hover img {
   filter: saturate(1.08);
   transform: scale(1.025);
