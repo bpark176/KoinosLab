@@ -101,23 +101,33 @@ window.koinosLabContent = {
     pathway: [
       {
         step: "01",
-        title: "Catalog",
-        text: "Document the device, required materials, skill level, safety constraints, and project examples."
+        title: "Identify",
+        text: "Identify a scientific tool or capability that is too expensive, inaccessible, or difficult to use, and define the problem it needs to solve."
       },
       {
         step: "02",
-        title: "Prepare",
-        text: "Create beginner-friendly instructions, checklists, and maintenance notes before circulation."
+        title: "Develop & Validate",
+        text: "Design, prototype, test, and refine an affordable alternative while comparing its performance against existing tools or accepted standards."
       },
       {
         step: "03",
-        title: "Share",
-        text: "Make the device available through lending, workshops, demonstrations, or partner programs."
+        title: "Catalog",
+        text: "Record the device’s purpose, specifications, cost, required materials, skill level, safety considerations, and possible applications."
       },
       {
         step: "04",
+        title: "Document",
+        text: "Create complete open-source assembly instructions, diagrams, parts lists, code, calibration procedures, and troubleshooting guides."
+      },
+      {
+        step: "05",
+        title: "Share",
+        text: "Publish the device openly and make it accessible through downloads, demonstrations, workshops, schools, partners, or other distribution programs."
+      },
+      {
+        step: "06",
         title: "Improve",
-        text: "Collect feedback, publish lessons learned, and refine the device entry for the next user."
+        text: "Collect feedback and performance data from users, publish lessons learned, and continuously refine future versions."
       }
     ]
   },
