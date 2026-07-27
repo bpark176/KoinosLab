@@ -19,6 +19,7 @@
   render("[data-governance-roles]", content.team?.governance?.roles, governanceRole);
   render("[data-team-groups]", content.team?.groups, teamGroup);
   setupTeamFilters();
+  setupRevealAnimations();
 
   const page = document.body.dataset.page;
   document.querySelectorAll("[data-nav-page]").forEach((link) => {
@@ -43,10 +44,15 @@
   function previewCard(item) {
     return `
       <article class="preview-card">
-        <p>${escapeHtml(item.label)}</p>
-        <h3>${escapeHtml(item.title)}</h3>
-        <span>${escapeHtml(item.text)}</span>
-        <a href="${escapeHtml(item.href)}">Learn more</a>
+        <a class="preview-card-link" href="${escapeHtml(item.href)}">
+          <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.imageAlt)}" loading="lazy" />
+          <span class="preview-card-body">
+            <span class="preview-card-label">${escapeHtml(item.label)}</span>
+            <strong>${escapeHtml(item.title)}</strong>
+            <span class="preview-card-copy">${escapeHtml(item.text)}</span>
+            <span class="text-link">Explore area</span>
+          </span>
+        </a>
       </article>
     `;
   }
@@ -54,12 +60,13 @@
   function deviceRecord(item) {
     return `
       <article class="record-card">
-        <div>
+        <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.imageAlt)}" loading="lazy" />
+        <div class="record-card-body">
           <p class="record-meta">${escapeHtml(item.type)}</p>
           <h3>${escapeHtml(item.name)}</h3>
           <p>${escapeHtml(item.description)}</p>
+          <span class="status-pill">${escapeHtml(item.status)}</span>
         </div>
-        <span class="status-pill">${escapeHtml(item.status)}</span>
       </article>
     `;
   }
@@ -76,8 +83,9 @@
 
   function marketplaceRecord(item) {
     return `
-      <article class="record-card">
-        <div>
+      <article class="record-card marketplace-record">
+        <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.imageAlt)}" loading="lazy" />
+        <div class="record-card-body">
           <p class="record-meta">${escapeHtml(item.tag)}</p>
           <h3>${escapeHtml(item.title)}</h3>
           <p>${escapeHtml(item.description)}</p>
@@ -195,6 +203,29 @@
         });
       });
     });
+  }
+
+  function setupRevealAnimations() {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const targets = document.querySelectorAll(
+      ".section-heading, .mission-layout, .record-card, .publication-item, .principle-card, .process-card, .profile-card, .timeline-item, .governance-role"
+    );
+    if (!targets.length || !("IntersectionObserver" in window)) return;
+
+    targets.forEach((target) => target.classList.add("reveal"));
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.12 }
+    );
+
+    targets.forEach((target) => observer.observe(target));
   }
 
   function escapeHtml(value) {

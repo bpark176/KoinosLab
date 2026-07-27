@@ -14,24 +14,36 @@ window.koinosLabContent = {
         title: "Devices",
         label: "Shared instrument library",
         text: "Browse accessible scientific and engineering tools organized by use case, skill level, and project type.",
+        image:
+          "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=1200&q=82",
+        imageAlt: "An engineer testing equipment at a laboratory workstation.",
         href: "./devices.html"
       },
       {
         title: "Marketplace",
         label: "Equipment exchange",
         text: "Support donations, lending, requests, and responsible reuse for lab equipment and educational tools.",
+        image:
+          "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=82",
+        imageAlt: "Scientific glassware and research equipment in a laboratory.",
         href: "./marketplace.html"
       },
       {
         title: "Publications",
         label: "Technical notes and reports",
         text: "Read guides, device briefs, field reports, and research notes from the Koinos Lab community.",
+        image:
+          "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=82",
+        imageAlt: "Research notes and documents spread across a worktable.",
         href: "./publications.html"
       },
       {
         title: "Vision",
         label: "Long-term direction",
         text: "Learn how Koinos Lab is building a practical network for accessible science, education, and engineering.",
+        image:
+          "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=82",
+        imageAlt: "A wide open landscape suggesting reach and possibility.",
         href: "./vision.html"
       }
     ]
@@ -49,6 +61,9 @@ window.koinosLabContent = {
         name: "Microscopy kit",
         type: "Observation and imaging",
         status: "Pilot catalog",
+        image:
+          "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=1000&q=82",
+        imageAlt: "A microscope prepared for scientific observation.",
         description:
           "Entry-level microscopes, prepared slides, phone mounts, and beginner guides for classroom or independent observation."
       },
@@ -56,6 +71,9 @@ window.koinosLabContent = {
         name: "Electronics bench",
         type: "Sensors and prototyping",
         status: "Pilot catalog",
+        image:
+          "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=82",
+        imageAlt: "Close-up view of electronics and circuit components.",
         description:
           "Microcontrollers, breadboards, meters, reusable components, and starter workflows for building simple scientific instruments."
       },
@@ -63,6 +81,9 @@ window.koinosLabContent = {
         name: "Field testing set",
         type: "Environmental measurement",
         status: "In development",
+        image:
+          "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=82",
+        imageAlt: "A natural landscape used for environmental field observation.",
         description:
           "Portable kits for water, soil, and air measurements that support local data collection and community science projects."
       },
@@ -70,6 +91,9 @@ window.koinosLabContent = {
         name: "Fabrication toolkit",
         type: "Design and repair",
         status: "Planned",
+        image:
+          "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=1000&q=82",
+        imageAlt: "An engineering workbench used for prototyping and repair.",
         description:
           "Basic tools for enclosures, fixtures, repairs, and low-cost custom parts that keep scientific projects moving."
       }
@@ -110,16 +134,25 @@ window.koinosLabContent = {
       {
         tag: "Donate",
         title: "Unused lab glassware",
+        image:
+          "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1000&q=82",
+        imageAlt: "Laboratory glassware ready for reuse.",
         description: "Beakers, flasks, and non-hazardous starter supplies for classroom demonstrations."
       },
       {
         tag: "Borrow",
         title: "Portable microscope",
+        image:
+          "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=1000&q=82",
+        imageAlt: "A portable microscope for scientific observation.",
         description: "Short-term access for workshops, fairs, field projects, or student research."
       },
       {
         tag: "Request",
         title: "Sensor modules",
+        image:
+          "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=82",
+        imageAlt: "Electronic sensor and circuit components.",
         description: "Community requests for low-cost sensors, data loggers, and repairable parts."
       }
     ],
