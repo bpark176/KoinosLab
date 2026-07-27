@@ -1322,16 +1322,46 @@ h3 {
 }
 
 .project-index nav a {
+  position: relative;
   padding: 9px 0;
+  padding-left: 14px;
   color: var(--muted);
   font-size: 0.8rem;
   font-weight: 750;
   border-bottom: 1px solid var(--line);
+  transition:
+    color 180ms ease,
+    border-color 180ms ease;
+}
+
+.project-index nav a::before {
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: 0;
+  width: 2px;
+  content: "";
+  background: var(--gold);
+  opacity: 0;
+  transform: scaleY(0.35);
+  transform-origin: center;
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
 }
 
 .project-index nav a:hover {
-  padding-left: 6px;
   color: var(--purple);
+}
+
+.project-index nav a.is-active {
+  color: var(--gold);
+  border-bottom-color: rgba(213, 166, 46, 0.5);
+}
+
+.project-index nav a.is-active::before {
+  opacity: 1;
+  transform: scaleY(1);
 }
 
 .project-doc-content {

@@ -21,6 +21,7 @@
   render("[data-governance-roles]", content.team?.governance?.roles, governanceRole);
   render("[data-team-groups]", content.team?.groups, teamGroup);
   setupTeamFilters();
+  setupProjectScrollSpy();
   setupRevealAnimations();
 
   const page = document.body.dataset.page;
@@ -215,6 +216,70 @@
         });
       });
     });
+  }
+
+  function setupProjectScrollSpy() {
+    const nav = document.querySelector(".project-index nav");
+    if (!nav) return;
+
+    const entries = Array.from(nav.querySelectorAll('a[href^="#"]'))
+      .map((link) => {
+        const id = decodeURIComponent(link.hash.slice(1));
+        const section = document.getElementById(id);
+        return section ? { id, link, section } : null;
+      })
+      .filter(Boolean);
+
+    if (!entries.length) return;
+
+    let activeId = "";
+    let frameRequested = false;
+
+    const setActive = (id) => {
+      if (id === activeId) return;
+      activeId = id;
+
+      entries.forEach((entry) => {
+        const isActive = entry.id === id;
+        entry.link.classList.toggle("is-active", isActive);
+        if (isActive) {
+          entry.link.setAttribute("aria-current", "location");
+        } else {
+          entry.link.removeAttribute("aria-current");
+        }
+      });
+    };
+
+    const updateActiveSection = () => {
+      frameRequested = false;
+      const readingLine = Math.min(window.innerHeight * 0.32, 280);
+      let current = entries[0];
+
+      entries.forEach((entry) => {
+        if (entry.section.getBoundingClientRect().top <= readingLine) current = entry;
+      });
+
+      const pageBottom = window.scrollY + window.innerHeight;
+      if (pageBottom >= document.documentElement.scrollHeight - 4) {
+        current = entries[entries.length - 1];
+      }
+
+      setActive(current.id);
+    };
+
+    const requestUpdate = () => {
+      if (frameRequested) return;
+      frameRequested = true;
+      window.requestAnimationFrame(updateActiveSection);
+    };
+
+    entries.forEach((entry) => {
+      entry.link.addEventListener("click", () => setActive(entry.id));
+    });
+
+    window.addEventListener("scroll", requestUpdate, { passive: true });
+    window.addEventListener("resize", requestUpdate);
+    updateActiveSection();
   }
 
   function setupRevealAnimations() {
