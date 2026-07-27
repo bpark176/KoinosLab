@@ -1,17 +1,17 @@
 :root {
-  --ink: #142322;
-  --ink-soft: #334643;
-  --muted: #687773;
-  --line: #dce4e1;
-  --paper: #f6faf9;
-  --white: #ffffff;
-  --green: #1f5b49;
-  --green-dark: #123a31;
-  --teal: #087b83;
-  --blue: #275ea8;
-  --clay: #a85d45;
-  --gold: #b58a34;
-  --shadow: 0 18px 46px rgba(20, 35, 34, 0.11);
+  --ink: #1d2421;
+  --ink-soft: #3d4743;
+  --muted: #66706c;
+  --line: #ded8cb;
+  --paper: #f7f5ef;
+  --white: #fffdf8;
+  --green: #4b365f;
+  --green-dark: #372644;
+  --teal: #d5a62e;
+  --blue: #4b365f;
+  --clay: #6f587f;
+  --gold: #d5a62e;
+  --shadow: 0 18px 46px rgba(29, 36, 33, 0.11);
   --radius: 8px;
   color-scheme: light;
 }
@@ -27,7 +27,7 @@ html {
 body {
   margin: 0;
   color: var(--ink);
-  background: var(--white);
+  background: var(--paper);
   font-family:
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
@@ -54,6 +54,7 @@ p {
 h1 {
   max-width: 850px;
   margin-bottom: 0;
+  color: var(--green-dark);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 4.7rem;
   font-weight: 700;
@@ -65,6 +66,7 @@ h1 {
 
 h2 {
   margin-bottom: 18px;
+  color: var(--green-dark);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 2.65rem;
   font-weight: 700;
@@ -90,7 +92,7 @@ h3 {
   position: sticky;
   z-index: 30;
   top: 0;
-  background: rgba(255, 255, 255, 0.96);
+  background: rgba(255, 253, 248, 0.96);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(16px);
 }
@@ -101,14 +103,14 @@ h3 {
   gap: 24px;
   min-height: 34px;
   padding: 8px clamp(20px, 5vw, 64px);
-  color: rgba(255, 255, 255, 0.86);
+  color: rgba(255, 253, 248, 0.86);
   background: var(--green-dark);
   font-size: 0.76rem;
   font-weight: 700;
 }
 
 .topline a {
-  color: #bde8dd;
+  color: #f1d68a;
 }
 
 .nav-shell {
@@ -141,6 +143,7 @@ h3 {
 
 .brand strong {
   display: block;
+  color: var(--green-dark);
   font-size: 1.24rem;
   line-height: 1.05;
 }
@@ -175,7 +178,7 @@ h3 {
 .site-nav a:focus-visible,
 .site-nav a[aria-current="page"] {
   color: var(--green);
-  border-bottom-color: var(--green);
+  border-bottom-color: var(--gold);
 }
 
 .nav-toggle {
@@ -257,6 +260,11 @@ h3 {
   background: var(--white);
 }
 
+.button:hover,
+.button:focus-visible {
+  border-color: var(--gold);
+}
+
 .hero-image {
   margin: 0;
   border: 1px solid var(--line);
@@ -282,7 +290,7 @@ h3 {
 }
 
 .section-light {
-  background: var(--paper);
+  background: #f1ede4;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -389,6 +397,11 @@ h3 {
   font-weight: 900;
 }
 
+.preview-card a:hover,
+.preview-card a:focus-visible {
+  color: var(--gold);
+}
+
 .sidebar-note,
 .feature-panel {
   position: sticky;
@@ -431,10 +444,10 @@ h3 {
   display: inline-flex;
   min-width: max-content;
   padding: 6px 10px;
-  border: 1px solid rgba(31, 91, 73, 0.24);
+  border: 1px solid rgba(75, 54, 95, 0.24);
   border-radius: 999px;
   color: var(--green);
-  background: rgba(31, 91, 73, 0.08);
+  background: rgba(75, 54, 95, 0.08);
   font-size: 0.76rem;
   font-weight: 900;
 }
@@ -460,7 +473,7 @@ h3 {
 
 .publication-item .authors {
   margin-bottom: 10px;
-  color: var(--clay);
+  color: var(--green);
   font-weight: 850;
 }
 
@@ -503,7 +516,7 @@ h3 {
 }
 
 .timeline-item span {
-  color: var(--clay);
+  color: var(--gold);
   font-weight: 950;
   text-transform: uppercase;
 }
@@ -540,7 +553,7 @@ h3 {
   height: 12px;
   margin-top: 6px;
   border-radius: 50%;
-  background: var(--green);
+  background: var(--gold);
 }
 
 .governance-role h3 {
@@ -562,8 +575,8 @@ h3 {
   padding: 6px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: #e9efed;
-  box-shadow: 0 10px 30px rgba(20, 35, 34, 0.08);
+  background: #ebe3d5;
+  box-shadow: 0 10px 30px rgba(29, 36, 33, 0.08);
 }
 
 .team-tabs button {
@@ -583,7 +596,8 @@ h3 {
 .team-tabs button.is-active {
   color: var(--green-dark);
   background: var(--white);
-  box-shadow: 0 1px 0 rgba(20, 35, 34, 0.06);
+  outline: 1px solid rgba(213, 166, 46, 0.28);
+  box-shadow: 0 1px 0 rgba(29, 36, 33, 0.06);
 }
 
 .team-groups {
@@ -620,6 +634,7 @@ h3 {
 }
 
 .profile-card-body h3 {
+  color: var(--green-dark);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.5rem;
 }
@@ -638,7 +653,7 @@ h3 {
 
 .site-footer p {
   margin: 4px 0 0;
-  color: rgba(255, 255, 255, 0.66);
+  color: rgba(255, 253, 248, 0.66);
 }
 
 .site-footer nav {
@@ -649,7 +664,7 @@ h3 {
 }
 
 .site-footer a {
-  color: #bde8dd;
+  color: #f1d68a;
   font-weight: 850;
 }
 
