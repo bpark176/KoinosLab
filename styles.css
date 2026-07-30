@@ -679,6 +679,7 @@ h3 {
 .record-card {
   position: relative;
   overflow: hidden;
+  height: 100%;
   background: var(--white);
   transition:
     transform 200ms ease,
@@ -691,7 +692,8 @@ h3 {
 }
 
 .record-card-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   color: inherit;
 }
 
@@ -719,35 +721,46 @@ h3 {
 }
 
 .record-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   padding: 27px;
 }
 
 .record-card-body h3 {
+  min-height: 2.4em;
+  margin-bottom: 14px;
   color: var(--purple-dark);
   font-size: 1.55rem;
 }
 
 .record-card-body > p:last-of-type {
-  margin-bottom: 22px;
+  margin-bottom: 0;
 }
 
 .record-card-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 18px;
+  min-height: 40px;
+  margin-top: auto;
+  padding-top: 22px;
+  gap: 5px;
 }
 
 .record-card-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   color: var(--purple);
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 800;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .record-card-action span {
   display: inline-block;
-  margin-left: 4px;
   transition: transform 180ms ease;
 }
 
@@ -757,6 +770,11 @@ h3 {
 
 .status-pill {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  min-width: 109px;
+  min-height: 36px;
   padding: 7px 10px;
   border: 1px solid rgba(75, 54, 95, 0.25);
   border-radius: 999px;
@@ -764,6 +782,7 @@ h3 {
   background: rgba(75, 54, 95, 0.07);
   font-size: 0.74rem;
   font-weight: 800;
+  white-space: nowrap;
 }
 
 .marketplace-grid {
