@@ -395,6 +395,7 @@ window.koinosLabContent = {
             name: "Brennan Park",
             role: "Founder & CEO",
             affiliation: "Seoul International School",
+            chapter: "south-korea",
             photo: "/assets/logos/koinos-reversed.svg",
             imageWidth: 460,
             imageHeight: 205,
@@ -405,6 +406,7 @@ window.koinosLabContent = {
             name: "Ian Kim",
             role: "Director of Engineering",
             affiliation: "Seoul International School",
+            chapter: "south-korea",
             photo: "/assets/logos/koinos-reversed.svg",
             imageWidth: 460,
             imageHeight: 205,
@@ -415,6 +417,7 @@ window.koinosLabContent = {
             name: "Research Lead",
             role: "Director of Research",
             affiliation: "Koinos Lab",
+            chapter: "indiana",
             photo: "./assets/logos/koinos-reversed.svg",
             photoAlt: "Koinos Lab logo placeholder for the Director of Research.",
             placeholder: true
@@ -423,6 +426,7 @@ window.koinosLabContent = {
             name: "To Be Announced",
             role: "Director of Outreach",
             affiliation: "Koinos Lab",
+            chapter: "new-jersey",
             photo: "./assets/logos/koinos-reversed.svg",
             photoAlt: "Koinos Lab logo marking a future leadership position.",
             placeholder: true

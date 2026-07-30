@@ -169,9 +169,12 @@
       ? `<p class="profile-affiliation">${escapeHtml(item.affiliation)}</p>`
       : "";
     const placeholderClass = item.placeholder ? " profile-card-placeholder" : "";
+    const chapterAttribute = item.chapter
+      ? ` data-team-chapter="${escapeHtml(item.chapter)}"`
+      : "";
 
     return `
-      <article class="profile-card${placeholderClass}">
+      <article class="profile-card${placeholderClass}"${chapterAttribute}>
         ${responsiveImage(
           {
             image: item.photo,
@@ -219,7 +222,29 @@
   function setupTeamFilters() {
     const filterButtons = document.querySelectorAll("[data-team-filter]");
     const categories = document.querySelectorAll("[data-team-category]");
+    const chapterFilters = document.querySelector("[data-team-chapter-filters]");
+    const chapterButtons = document.querySelectorAll("[data-team-chapter]");
+    const leadershipCategory = document.querySelector('[data-team-category="leadership"]');
     if (!filterButtons.length || !categories.length) return;
+
+    const setChapter = (selectedButton) => {
+      const selectedChapter = selectedButton.dataset.teamChapter;
+
+      chapterButtons.forEach((item) => {
+        const isActive = item === selectedButton;
+        item.classList.toggle("is-active", isActive);
+        item.setAttribute("aria-pressed", String(isActive));
+      });
+
+      leadershipCategory?.querySelectorAll("[data-team-chapter]").forEach((profile) => {
+        profile.hidden =
+          selectedChapter !== "all" && profile.dataset.teamChapter !== selectedChapter;
+      });
+    };
+
+    chapterButtons.forEach((button) => {
+      button.addEventListener("click", () => setChapter(button));
+    });
 
     filterButtons.forEach((button) => {
       button.addEventListener("click", () => {
@@ -234,6 +259,19 @@
           const isVisible = selected === "all" || category.dataset.teamCategory === selected;
           category.hidden = !isVisible;
         });
+
+        if (chapterFilters) {
+          chapterFilters.hidden = selected !== "leadership";
+        }
+
+        if (selected === "leadership") {
+          const allChaptersButton = document.querySelector('[data-team-chapter="all"]');
+          if (allChaptersButton) setChapter(allChaptersButton);
+        } else {
+          leadershipCategory?.querySelectorAll("[data-team-chapter]").forEach((profile) => {
+            profile.hidden = false;
+          });
+        }
       });
     });
   }

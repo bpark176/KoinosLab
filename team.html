@@ -180,11 +180,19 @@
 
       <section class="section section-light team-directory-section">
         <div class="section-shell">
-          <div class="team-tabs" aria-label="Team directory filters">
-            <button type="button" class="is-active" data-team-filter="all" aria-pressed="true">All</button>
-            <button type="button" data-team-filter="leadership" aria-pressed="false">Leadership</button>
-            <button type="button" data-team-filter="advisors" aria-pressed="false">Advisors</button>
-            <button type="button" data-team-filter="members" aria-pressed="false">Members</button>
+          <div class="team-filter-controls">
+            <div class="team-tabs" aria-label="Team directory filters">
+              <button type="button" class="is-active" data-team-filter="all" aria-pressed="true">All</button>
+              <button type="button" data-team-filter="leadership" aria-pressed="false">Leadership</button>
+              <button type="button" data-team-filter="advisors" aria-pressed="false">Advisors</button>
+              <button type="button" data-team-filter="members" aria-pressed="false">Members</button>
+            </div>
+            <div class="team-chapter-tabs" data-team-chapter-filters aria-label="Leadership chapter filters" hidden>
+              <button type="button" class="is-active" data-team-chapter="all" aria-pressed="true">All Chapters</button>
+              <button type="button" data-team-chapter="south-korea" aria-pressed="false">South Korea</button>
+              <button type="button" data-team-chapter="indiana" aria-pressed="false">Indiana</button>
+              <button type="button" data-team-chapter="new-jersey" aria-pressed="false">New Jersey</button>
+            </div>
           </div>
           <div class="team-groups" data-team-groups></div>
         </div>

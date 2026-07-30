@@ -1058,13 +1058,16 @@ h3 {
   background: var(--paper);
 }
 
+.team-filter-controls {
+  margin-bottom: 76px;
+}
+
 .team-tabs {
   position: sticky;
   z-index: 20;
   top: 88px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-bottom: 76px;
   background: var(--purple-dark);
   box-shadow: var(--shadow);
 }
@@ -1094,6 +1097,47 @@ h3 {
 .team-tabs button.is-active {
   color: var(--purple-dark);
   background: var(--gold);
+}
+
+.team-chapter-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  gap: 8px;
+  padding-top: 14px;
+}
+
+.team-chapter-tabs[hidden] {
+  display: none;
+}
+
+.team-chapter-tabs button {
+  min-height: 40px;
+  padding: 0 17px;
+  border: 1px solid rgba(45, 28, 58, 0.28);
+  border-radius: 0;
+  color: var(--purple-dark);
+  background: transparent;
+  font-size: 0.78rem;
+  font-weight: 750;
+  cursor: pointer;
+  transition:
+    color 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.team-chapter-tabs button:hover,
+.team-chapter-tabs button:focus-visible {
+  border-color: var(--purple);
+  background: var(--white);
+}
+
+.team-chapter-tabs button.is-active {
+  border-color: var(--purple-dark);
+  color: var(--white);
+  background: var(--purple-dark);
+  box-shadow: inset 0 -4px 0 var(--gold);
 }
 
 .team-groups {
@@ -2301,6 +2345,9 @@ h3 {
   .team-tabs {
     position: static;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-filter-controls {
     margin-bottom: 56px;
   }
 
@@ -2310,6 +2357,15 @@ h3 {
 
   .team-tabs button:nth-child(-n + 2) {
     border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .team-chapter-tabs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .team-chapter-tabs button {
+    width: 100%;
+    padding: 0 10px;
   }
 
   .team-groups {
