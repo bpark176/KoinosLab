@@ -393,7 +393,7 @@ window.koinosLabContent = {
         people: [
           {
             name: "Brennan Park",
-            role: "Founder & CEO",
+            role: "FOUNDER & CEO\nPRESIDENT, KOREA CHAPTER",
             affiliation: "Seoul International School",
             chapter: "south-korea",
             photo: "/assets/logos/koinos-reversed.svg",
