@@ -223,7 +223,7 @@
     const filterButtons = document.querySelectorAll("[data-team-filter]");
     const categories = document.querySelectorAll("[data-team-category]");
     const chapterFilters = document.querySelector("[data-team-chapter-filters]");
-    const chapterButtons = document.querySelectorAll("[data-team-chapter]");
+    const chapterButtons = chapterFilters?.querySelectorAll("button[data-team-chapter]") || [];
     const leadershipCategory = document.querySelector('[data-team-category="leadership"]');
     if (!filterButtons.length || !categories.length) return;
 
