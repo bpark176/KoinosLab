@@ -395,6 +395,7 @@ window.koinosLabContent = {
             name: "Brennan Park",
             role: "FOUNDER & CEO",
             affiliation: "Seoul International School",
+            linkedIn: "https://www.linkedin.com/in/brennan-park7",
             chapter: "south-korea",
             photo: "/assets/logos/koinos-reversed.svg",
             imageWidth: 460,
@@ -444,6 +445,7 @@ window.koinosLabContent = {
             name: "Dr. Gyuseok Kim",
             role: "ADVISOR, ELECTRICAL & SYSTEMS ENGINEERING",
             affiliation: "University of Pennsylvania",
+            linkedIn: "https://www.linkedin.com/in/gyuseok-kim-b12ab395/",
             photo: "./assets/logos/koinos-reversed.svg",
             photoAlt: "Koinos Lab logo marking a future scientific advisor.",
             placeholder: true
@@ -452,6 +454,7 @@ window.koinosLabContent = {
             name: "Haocong Xu",
             role: "ADVISOR, MECHANICAL ENGINEERING",
             affiliation: "University of Pennsylvania",
+            linkedIn: "https://www.linkedin.com/in/haocongxu/",
             photo: "./assets/logos/koinos-reversed.svg",
             photoAlt: "Koinos Lab logo marking a future engineering advisor.",
             placeholder: true

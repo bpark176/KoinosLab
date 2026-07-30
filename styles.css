@@ -1213,6 +1213,22 @@ h3 {
   line-height: 1.15;
 }
 
+.profile-name-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.14em;
+  transition:
+    opacity 160ms ease,
+    text-decoration-color 160ms ease;
+}
+
+.profile-name-link:hover,
+.profile-name-link:focus-visible {
+  opacity: 0.78;
+  text-decoration-color: currentColor;
+}
+
 .profile-card-body .profile-role {
   min-height: 2.6em;
   margin: 0;

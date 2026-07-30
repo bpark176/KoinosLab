@@ -172,6 +172,11 @@
     const chapterAttribute = item.chapter
       ? ` data-team-chapter="${escapeHtml(item.chapter)}"`
       : "";
+    const name = item.linkedIn
+      ? `<a class="profile-name-link" href="${escapeHtml(
+          item.linkedIn
+        )}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.name)}</a>`
+      : escapeHtml(item.name);
 
     return `
       <article class="profile-card${placeholderClass}"${chapterAttribute}>
@@ -185,7 +190,7 @@
           "(max-width: 760px) 100vw, 25vw"
         )}
         <div class="profile-card-body">
-          <h3>${escapeHtml(item.name)}</h3>
+          <h3>${name}</h3>
           <p class="profile-role">${escapeHtml(item.role)}</p>
           ${affiliation}
         </div>
