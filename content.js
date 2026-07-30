@@ -441,17 +441,17 @@ window.koinosLabContent = {
           "Advisors provide outside perspective on technical rigor, safety, feasibility, and responsible growth.",
         people: [
           {
-            name: "To Be Announced",
-            role: "Advisor, Scientific Review",
-            affiliation: "Koinos Lab",
+            name: "Dr. Gyuseok Kim",
+            role: "ADVISOR, ELECTRICAL & SYSTEMS ENGINEERING",
+            affiliation: "University of Pennsylvania",
             photo: "./assets/logos/koinos-reversed.svg",
             photoAlt: "Koinos Lab logo marking a future scientific advisor.",
             placeholder: true
           },
           {
-            name: "To Be Announced",
-            role: "Advisor, Engineering Systems",
-            affiliation: "Koinos Lab",
+            name: "Haocong Xu",
+            role: "ADVISOR, MECHANICAL ENGINEERING",
+            affiliation: "University of Pennsylvania",
             photo: "./assets/logos/koinos-reversed.svg",
             photoAlt: "Koinos Lab logo marking a future engineering advisor.",
             placeholder: true
