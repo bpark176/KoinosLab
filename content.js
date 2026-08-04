@@ -415,12 +415,12 @@ window.koinosLabContent = {
             placeholder: true
           },
           {
-            name: "Research Lead",
-            role: "Director of Research",
-            affiliation: "Koinos Lab",
+            name: "Felix Wang",
+            role: "Indiana Chapter President",
+            affiliation: "William Henry Harrison High School",
             chapter: "indiana",
             photo: "./assets/logos/koinos-reversed.svg",
-            photoAlt: "Koinos Lab logo placeholder for the Director of Research.",
+            photoAlt: "Koinos Lab logo placeholder for Felix Wang.",
             placeholder: true
           },
           {
