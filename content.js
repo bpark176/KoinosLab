@@ -418,10 +418,12 @@ window.koinosLabContent = {
             name: "Felix Wang",
             role: "Indiana Chapter President",
             affiliation: "William Henry Harrison High School",
+            linkedIn: "https://www.linkedin.com/in/felix-wang-505989423/",
             chapter: "indiana",
-            photo: "./assets/logos/koinos-reversed.svg",
-            photoAlt: "Koinos Lab logo placeholder for Felix Wang.",
-            placeholder: true
+            photo: "/assets/images/felix-wang-960.webp",
+            imageWidth: 960,
+            imageHeight: 1427,
+            photoAlt: "Portrait of Felix Wang."
           },
           {
             name: "To Be Announced",
