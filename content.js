@@ -393,7 +393,7 @@ window.koinosLabContent = {
         people: [
           {
             name: "Brennan Park",
-            role: "FOUNDER & CEO",
+            role: "PRESIDENT, KOREA CHAPTER\nFOUNDER & CEO",
             affiliation: "Seoul International School",
             linkedIn: "https://www.linkedin.com/in/brennan-park7",
             chapter: "south-korea",
@@ -416,7 +416,7 @@ window.koinosLabContent = {
           },
           {
             name: "Felix Wang",
-            role: "Indiana Chapter President",
+            role: "PRESIDENT, INDIANA CHAPTER",
             affiliation: "William Henry Harrison High School",
             linkedIn: "https://www.linkedin.com/in/felix-wang-505989423/",
             chapter: "indiana",
