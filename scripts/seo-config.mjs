@@ -96,16 +96,16 @@ export const pages = [
   {
     file: "team.html",
     path: "/team.html",
-    title: "Our Team | Koinos Lab",
+    title: "Leadership & Mentors | Koinos Lab",
     description:
-      "Meet the Koinos Lab leadership and learn how its engineering, research, advisory, and outreach roles support accessible scientific instrumentation.",
-    h1: "Governance and team",
+      "Learn how Brennan Park leads Koinos Lab's open-source instrument development, with periodic guidance from external scientific and engineering mentors.",
+    h1: "Leadership and technical guidance",
     schemaType: "AboutPage",
-    breadcrumbLabel: "Our Team",
-    image: "/assets/images/research-team-1920.webp",
+    breadcrumbLabel: "Leadership & Mentors",
+    image: "/assets/images/sensor-circuit-1920.webp",
     imageWidth: 1920,
-    imageHeight: 1281,
-    imageAlt: "Research and engineering team collaborating around computers"
+    imageHeight: 1280,
+    imageAlt: "Electronic circuit board used in scientific instrument development"
   },
   {
     file: "devices/spectrofluorometer/index.html",

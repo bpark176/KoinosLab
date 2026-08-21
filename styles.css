@@ -1173,13 +1173,43 @@ h3 {
   margin-bottom: 18px;
 }
 
-.team-category[data-team-category="advisors"] .team-category-header {
+.team-category[data-team-category="mentors"] .team-category-header {
   width: 100%;
 }
 
-.team-category[data-team-category="advisors"] .team-category-header h2 {
+.team-category[data-team-category="mentors"] .team-category-header h2 {
   max-width: none;
   white-space: nowrap;
+}
+
+.team-category[data-team-category="leadership"] .profile-grid {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 1040px;
+}
+
+.team-category[data-team-category="leadership"] .profile-card {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.82fr) minmax(0, 1.18fr);
+}
+
+.team-category[data-team-category="leadership"] .profile-card-media img {
+  height: 100%;
+  min-height: 430px;
+  aspect-ratio: auto;
+}
+
+.team-category[data-team-category="leadership"] .profile-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 46px;
+  border-top: 0;
+  border-left: 5px solid var(--gold);
+}
+
+.team-category[data-team-category="mentors"] .profile-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 1040px;
 }
 
 .profile-card {
@@ -1196,7 +1226,13 @@ h3 {
   box-shadow: var(--shadow);
 }
 
-.profile-card img {
+.profile-card-media {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.profile-card-media img {
   width: 100%;
   height: auto;
   aspect-ratio: 1 / 1;
@@ -1208,15 +1244,28 @@ h3 {
     transform 500ms ease;
 }
 
-.profile-card-placeholder img {
+.profile-card-placeholder .profile-card-media img {
   padding: 22%;
   object-fit: contain;
   background: var(--purple-dark);
 }
 
-.profile-card:hover img {
+.profile-card:hover .profile-card-media img {
   filter: saturate(1.08);
   transform: scale(1.025);
+}
+
+.profile-photo-note {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px 14px;
+  color: var(--purple-dark);
+  background: var(--gold);
+  font-size: 0.72rem;
+  font-weight: 850;
+  text-align: center;
 }
 
 .profile-card-body {
@@ -1265,6 +1314,13 @@ h3 {
   font-size: 0.96rem;
   font-weight: 600;
   line-height: 1.45;
+}
+
+.profile-card-body .profile-bio {
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.58;
 }
 
 .project-hero {
@@ -2162,8 +2218,24 @@ h3 {
     top: 76px;
   }
 
-  .team-category[data-team-category="advisors"] .team-category-header h2 {
+  .team-category[data-team-category="mentors"] .team-category-header h2 {
     white-space: normal;
+  }
+
+  .team-category[data-team-category="leadership"] .profile-card {
+    grid-template-columns: 1fr;
+  }
+
+  .team-category[data-team-category="leadership"] .profile-card-media img {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 1 / 1;
+  }
+
+  .team-category[data-team-category="leadership"] .profile-card-body {
+    padding: 34px 30px 38px;
+    border-top: 5px solid var(--gold);
+    border-left: 0;
   }
 
   .project-hero-grid,
@@ -2357,6 +2429,10 @@ h3 {
   .principle-grid,
   .process-grid,
   .profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-category[data-team-category="mentors"] .profile-grid {
     grid-template-columns: 1fr;
   }
 
