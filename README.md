@@ -4,7 +4,7 @@ This is the static multi-page website for Koinos Lab at `https://www.koinoslab.o
 
 ## Edit the site
 
-- Update most text, device cards, marketplace listings, publications, vision items, and team members in `content.js`.
+- Update most text, device cards, marketplace listings, publications, vision items, and leadership and mentor profiles in `content.js`.
 - Update colors, spacing, and layout in `styles.css`.
 - Update page structure or navigation in the individual `.html` files.
 - Update the flagship instrument documentation in `devices/spectrofluorometer/index.html`.

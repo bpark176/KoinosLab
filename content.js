@@ -355,31 +355,23 @@ window.koinosLabContent = {
   },
 
   team: {
-    eyebrow: "Our team",
-    title: "Governance and team",
+    eyebrow: "Leadership & mentors",
+    title: "Leadership and technical guidance",
     lead:
-      "Koinos Lab is organized as a research and engineering initiative with defined leadership, advisory oversight, and project teams focused on scientific access.",
+      "Koinos Lab is primarily operated by Brennan Park, with periodic guidance from external scientific and engineering mentors.",
     governance: {
-      eyebrow: "Governance structure",
-      title: "A clear operating model for research, validation, and outreach.",
+      eyebrow: "Operating structure",
+      title: "Hands-on project leadership supported by external guidance.",
       copy:
-        "The organization is led by the Founder & CEO, supported by directors responsible for research validation and outreach. Advisors provide technical, scientific, and community guidance, while members contribute to device documentation, marketplace operations, and publications.",
+        "Brennan Park leads Koinos Lab's day-to-day development work. External mentors may provide periodic technical or research guidance, but they are not employees, executives, founders, or operational team members.",
       roles: [
         {
-          title: "Executive leadership",
-          text: "Founder & CEO sets organizational direction, partnerships, and program priorities."
+          title: "Project leadership",
+          text: "The Founder & Lead Engineer directs and carries out Koinos Lab's instrument development, validation, documentation, and publication work."
         },
         {
-          title: "Research & validation",
-          text: "The research director establishes evidence standards, device review practices, and publication quality."
-        },
-        {
-          title: "Outreach",
-          text: "The outreach director manages community relationships, partner engagement, and public-facing programs."
-        },
-        {
-          title: "Advisory board",
-          text: "Advisors review technical decisions and help connect Koinos Lab with scientific and engineering communities."
+          title: "External mentorship",
+          text: "Scientific and engineering mentors may provide periodic guidance when their expertise is relevant. Mentor profiles remain provisional pending explicit approval."
         }
       ]
     },
@@ -387,114 +379,50 @@ window.koinosLabContent = {
       {
         id: "leadership",
         eyebrow: "Leadership",
-        title: "Executive and program directors",
+        title: "Founder and lead engineer",
         description:
-          "Leadership is responsible for institutional direction, research standards, partner relationships, and the quality of public-facing programs.",
+          "Koinos Lab's active development and operations are led by its founder.",
         people: [
           {
             name: "Brennan Park",
-            role: "PRESIDENT, KOREA CHAPTER\nFOUNDER & CEO",
+            role: "Founder & Lead Engineer",
             affiliation: "Seoul International School",
             linkedIn: "https://www.linkedin.com/in/brennan-park7",
-            chapter: "south-korea",
             photo: "/assets/logos/koinos-reversed.svg",
             imageWidth: 460,
             imageHeight: 205,
             photoAlt: "Koinos Lab logo placeholder for Brennan Park.",
-            placeholder: true
-          },
-          {
-            name: "To Be Announced",
-            role: "Director of Outreach",
-            affiliation: "Koinos Lab",
-            chapter: "new-jersey",
-            photo: "./assets/logos/koinos-reversed.svg",
-            photoAlt: "Koinos Lab logo marking a future leadership position.",
-            placeholder: true
+            placeholder: true,
+            bio: "Brennan founded Koinos Lab and personally leads its instrument design, embedded programming, prototyping, experimental validation, research, documentation, website development, and open-source publication efforts."
           }
         ]
       },
       {
-        id: "advisors",
-        eyebrow: "Advisors",
-        title: "Scientific and engineering advisors",
+        id: "mentors",
+        eyebrow: "Mentors",
+        title: "External technical mentors",
         description:
-          "Advisors provide outside perspective on technical rigor, safety, feasibility, and responsible growth.",
+          "These provisional profiles are pending explicit approval. Mentors may provide periodic technical or research guidance and are not part of Koinos Lab's day-to-day operations.",
         people: [
           {
-            name: "Dr. Gyuseok Kim",
-            role: "ADVISOR, ELECTRICAL & SYSTEMS ENGINEERING",
-            affiliation: "University of Pennsylvania",
-            linkedIn: "https://www.linkedin.com/in/gyuseok-kim-b12ab395/",
+            name: "Prof. Gyuseok Kim",
+            role: "Scientific Mentor",
+            affiliation: "[CONFIRM AFFILIATION]",
             photo: "./assets/logos/koinos-reversed.svg",
-            photoAlt: "Koinos Lab logo marking a future scientific advisor.",
-            placeholder: true
+            photoAlt: "Koinos Lab placeholder shown while an approved photo for Prof. Gyuseok Kim is pending.",
+            photoNote: "[ADD APPROVED PHOTO]",
+            placeholder: true,
+            bio: "[CONFIRM BIO]"
           },
           {
             name: "Haocong Xu",
-            role: "ADVISOR, MECHANICAL ENGINEERING",
-            affiliation: "University of Pennsylvania",
-            linkedIn: "https://www.linkedin.com/in/haocongxu/",
+            role: "Engineering Mentor",
+            affiliation: "[CONFIRM AFFILIATION]",
             photo: "./assets/logos/koinos-reversed.svg",
-            photoAlt: "Koinos Lab logo marking a future engineering advisor.",
-            placeholder: true
-          },
-          {
-            name: "To Be Announced",
-            role: "Advisor, Partnerships",
-            affiliation: "Koinos Lab",
-            photo: "./assets/logos/koinos-reversed.svg",
-            photoAlt: "Koinos Lab logo marking a future community advisor.",
-            placeholder: true
-          },
-          {
-            name: "To Be Announced",
-            role: "Advisory Position",
-            affiliation: "Koinos Lab",
-            photo: "./assets/logos/koinos-reversed.svg",
-            photoAlt: "Koinos Lab logo marking a future advisory position.",
-            placeholder: true
-          }
-        ]
-      },
-      {
-        id: "members",
-        eyebrow: "Members",
-        title: "Project and research team",
-        description:
-          "Members contribute to the device library, marketplace operations, publications, and practical research projects.",
-        people: [
-          {
-            name: "To Be Announced",
-            role: "Device Documentation",
-            affiliation: "Koinos Lab",
-            photo: "./assets/logos/koinos-reversed.svg",
-            photoAlt: "Koinos Lab logo marking a future device library member.",
-            placeholder: true
-          },
-          {
-            name: "To Be Announced",
-            role: "Equipment Exchange",
-            affiliation: "Koinos Lab",
-            photo: "./assets/logos/koinos-reversed.svg",
-            photoAlt: "Koinos Lab logo marking a future marketplace member.",
-            placeholder: true
-          },
-          {
-            name: "To Be Announced",
-            role: "Research Communication",
-            affiliation: "Koinos Lab",
-            photo: "./assets/logos/koinos-reversed.svg",
-            photoAlt: "Koinos Lab logo marking a future publications member.",
-            placeholder: true
-          },
-          {
-            name: "To Be Announced",
-            role: "Team Member",
-            affiliation: "Koinos Lab",
-            photo: "./assets/logos/koinos-reversed.svg",
-            photoAlt: "Koinos Lab logo marking a future team member.",
-            placeholder: true
+            photoAlt: "Koinos Lab placeholder shown while an approved photo for Haocong Xu is pending.",
+            photoNote: "[ADD APPROVED PHOTO]",
+            placeholder: true,
+            bio: "[CONFIRM BIO]"
           }
         ]
       }

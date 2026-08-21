@@ -164,7 +164,7 @@ function buildSchema(page) {
             "@type": "Person",
             "@id": `${baseUrl}/team.html#brennan-park`,
             name: "Brennan Park",
-            jobTitle: "Founder & CEO"
+            jobTitle: "Founder & Lead Engineer"
           }
         },
         {
@@ -251,9 +251,11 @@ function buildSchema(page) {
         "@type": "Person",
         "@id": `${url}#brennan-park`,
         name: "Brennan Park",
-        jobTitle: "Founder & CEO",
+        jobTitle: "Founder & Lead Engineer",
         worksFor: { "@id": organizationId },
-        affiliation: { "@type": "EducationalOrganization", name: "Seoul International School" }
+        affiliation: { "@type": "EducationalOrganization", name: "Seoul International School" },
+        description:
+          "Brennan Park founded Koinos Lab and leads its instrument design, embedded programming, prototyping, validation, research, documentation, website development, and open-source publication work."
       }
     ];
     pageNode.mainEntity = people.map((person) => ({ "@id": person["@id"] }));
