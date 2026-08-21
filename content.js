@@ -404,28 +404,6 @@ window.koinosLabContent = {
             placeholder: true
           },
           {
-            name: "Ian Kim",
-            role: "Director of Engineering",
-            affiliation: "Seoul International School",
-            chapter: "south-korea",
-            photo: "/assets/logos/koinos-reversed.svg",
-            imageWidth: 460,
-            imageHeight: 205,
-            photoAlt: "Koinos Lab logo placeholder for Ian Kim.",
-            placeholder: true
-          },
-          {
-            name: "Felix Wang",
-            role: "PRESIDENT, INDIANA CHAPTER",
-            affiliation: "William Henry Harrison High School",
-            linkedIn: "https://www.linkedin.com/in/felix-wang-505989423/",
-            chapter: "indiana",
-            photo: "/assets/images/felix-wang-960.webp",
-            imageWidth: 960,
-            imageHeight: 1427,
-            photoAlt: "Portrait of Felix Wang."
-          },
-          {
             name: "To Be Announced",
             role: "Director of Outreach",
             affiliation: "Koinos Lab",
