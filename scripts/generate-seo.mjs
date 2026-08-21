@@ -254,14 +254,6 @@ function buildSchema(page) {
         jobTitle: "Founder & CEO",
         worksFor: { "@id": organizationId },
         affiliation: { "@type": "EducationalOrganization", name: "Seoul International School" }
-      },
-      {
-        "@type": "Person",
-        "@id": `${url}#ian-kim`,
-        name: "Ian Kim",
-        jobTitle: "Director of Engineering",
-        worksFor: { "@id": organizationId },
-        affiliation: { "@type": "EducationalOrganization", name: "Seoul International School" }
       }
     ];
     pageNode.mainEntity = people.map((person) => ({ "@id": person["@id"] }));
